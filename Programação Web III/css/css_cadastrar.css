@@ -1,0 +1,139 @@
+/* importando a fonte Montserrat do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
+
+/* Colocando a fonte em toda a tela html*/
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* Essa parte estiliza um elemento div com o ID "divForm", criando um contêiner de formulário defininindo suas características,
+dimensões definidas e uma posição relativa com um deslocamento específico para cima, para a direita e para a esquerda em relação 
+ao seu elemento pai. O layout flexível é usado para centralizar os elementos filho vertical e horizontalmente no contêiner do formulário.*/
+#divForm{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #dbe5eb;
+    border-radius: 9px;
+    width: 550px;
+    height: 480px;
+    top: 240px;
+    right: 200px;
+    left: 650px;
+}
+
+/* o código acima estiliza o elemento com ID "cadastro" posicionando-o de forma absoluta na página, definindo sua largura, posição, distância 
+em relação às bordas da página e estilizando sua fonte */
+#cadastro{
+    width: 300px;
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #424242;
+}
+
+/* Definindo a estilização do elemento com ID "formulário"*/
+#formulario{
+    align-items: center;
+    position: absolute;
+    top: 90px;
+}
+
+/* Definindo a estilização do elemento com ID "txtNome"*/
+#txtNome{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento com ID "txtCpf*/
+#txtCpf{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento com ID "date*/
+#date{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento com ID "telTelefone*/
+#telTelefone{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento com ID "emEmail*/
+#emEmail{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+ /* Definindo a estilização do elemento com ID "pwdSenha*/
+#pwdSenha{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento com ID "pwdConfSenha*/
+#pwdConfSenha{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #b25abf solid 1px;
+    width: 500px;
+    height: 25px;
+}
+
+/* Definindo a estilização do elemento button*/
+button{
+    cursor: pointer;
+    position: absolute;
+    top: 410px;
+    left: 25px;
+    border: solid 1px;
+    border-color: #ffffff;
+    background-color: #b25abf;
+    text-align: center;
+    height: 30px;
+    width: 500px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}

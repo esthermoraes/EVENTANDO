@@ -1,0 +1,49 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Definição a escala da página para se adequar ao tamanho da tela do dispositivo -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<!-- CSS externo-->
+    <link rel="stylesheet" type="text/css" href="css/css_login.css" /> 
+	<title> LOGIN </title>
+</head>
+
+<body bgcolor = 'bedef2'>
+	<div id = "divLogo" name = "divLogo">
+		<img id = logo src = "img/logo_login.png">
+	</div> <br> <br>
+     
+	<div id = "divLogin" name = "divLogin">
+		<button id="login"> LOGIN </button>
+		<hr noshade>
+
+        <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
+        <form id = "formulario"> 
+            <input type = "email" id = "emEmail" placeholder = "Email">
+            <br> <br> <br> 
+
+            <input type = "password" id = "pwdSenha" placeholder = "Senha">
+			<br> <br>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<label class="form-check-label" for="flexCheckChecked"> Manter-se conectado </label>
+			</div>
+
+			<a id = "recuperacao" href="recuperacao_trab1.html" target = "_blank"> ESQUECI MINHA SENHA? </a>
+        </form>
+		
+        <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
+        <a href = "menu_trab1.html"> 
+			<button type = "submit"> ENTRAR </button>
+		</a>
+	
+    </div>
+	<div class="rec_cad">
+		<!-- Temos um a que ao clicar redireciona para a página CADASTRO -->
+		<a id = "cadastrar" href="cadastrar_trab1.html"> CADASTRE-SE </a>
+	</div>
+
+</body>
+</html>

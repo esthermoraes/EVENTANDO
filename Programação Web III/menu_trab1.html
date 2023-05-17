@@ -1,0 +1,117 @@
+<!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/css_menu.css" />
+    <!-- Definimos o título da página -->
+	<title> MENU </title>
+</head>
+
+<!-- Definimos a cor da página -->
+<body bgcolor = 'ededed'>
+<!-- Chamamos o arquivo JAVA para colacar as funcinalidades de alguns elementos da página -->
+<script src = 'js/js_menu.js' defer></script>
+<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
+	<header id = "Cabecalho" name = "Cabecalho">
+		<div id = "divLogoP" name = "divLogoP">
+			<img id = logo src = "img/logo.png">
+		</div> <br> <br>
+
+		<div class="divBuscar">
+            <input type="search" class="buscar" placeholder="Buscar eventos" required>
+            <a href="#">
+				<img id="lupa" src="img/lupa.png" alt="Lupa">
+			</a>
+		</div>
+
+		<button id = "CriarEvento" name = "CriarEvento" onclick = "CriarEvento()"> Criar Evento </button>
+
+        <div id = "menu_hamburguer">
+			<button id = "btn_menuHamburguer" onclick="mDropDown()" > <img src="img/menu_hamburguer.png"></button>
+            <!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
+            <div id = "dropDown" class = "dropDown">
+                <a href = #> Favoritos </a>
+                <a href = #> Sobre Nós </a>
+                <a href = #> Ajuda </a>
+            </div>
+        </div>
+		
+        <div id = "perfil">
+			<button id = "btn_perfil" type="button" > <img src="img/perfil.png"></button>
+		</div>
+	</header>	
+
+<!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
+    <div class="EventosR">
+        <label>EVENTOS RECENTES</label>
+        <div class="barraE">
+            <img class="evento" src="img/evento1.jpeg" alt="evento1">
+            <img class="evento" src="img/evento2.jpeg" alt="evento2">
+            <img class="evento" src="img/evento3.jpeg" alt="evento3">
+            <img class="evento" src="img/evento4.jpeg" alt="evento4">
+            <img class="evento" src="img/evento5.jpeg" alt="evento5">
+            <img class="evento" src="img/evento6.jpeg" alt="evento6">
+            <img class="evento" src="img/evento7.jpeg" alt="evento7">
+            <img class="evento" src="img/evento8.jpeg" alt="evento8">
+            <img class="evento" src="img/evento9.jpeg" alt="evento9">
+            <img class="evento" src="img/evento10.jpg" alt="evento10">
+            <img class="evento" src="img/evento11.jpg" alt="evento11">
+            <img class="evento" src="img/evento12.jfif" alt="evento12">
+            <img class="evento" src="img/evento13.jfif" alt="evento13">
+        </div>
+    </div>
+
+<!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens dos evetos criados pelo usuário -->
+    <div id = "MyEventos">
+        <label> MEUS </label> 
+        <br>
+        <label> EVENTOS </label>
+        <br>
+        <div id = "barraMyE">
+            <img class = "evento2" src = "img/evento14.jfif" alt = "evento14">
+            <img id = "favorito14" src = "img/favorito.png">
+            <img class = "evento2" src = "img/evento15.jfif" alt = "evento15">
+            <img id = "favorito15" src = "img/favorito.png">
+            <img class = "evento2" src = "img/evento16.jpeg" alt = "evento16">
+            <img id = "favorito16" src = "img/favorito.png">
+            <img class = "evento2" src = "img/evento17.jpeg" alt = "evento17">
+            <img id = "favorito17" src = "img/favorito.png">
+            <img class = "evento2" src = "img/evento18.jpeg" alt = "evento18">
+            <img id = "favorito18" src = "img/favorito.png">
+            <img class = "evento2_2" src = "img/evento19.jpeg" alt = "evento19">
+            <img id = "favorito19" src = "img/favorito.png">
+            <img class = "evento2_2" src = "img/evento20.jfif" alt = "evento20">
+            <img id = "favorito20" src = "img/favorito.png">
+            <img class = "evento2_2" src = "img/evento21.jpeg" alt = "evento21">
+            <img id = "favorito21" src = "img/favorito.png">
+            <img class = "evento2_2" src = "img/evento22.jpeg" alt = "evento22">
+            <img id = "favorito22" src = "img/favorito.png">
+            <img class = "evento2_2" src = "img/evento23.jpeg" alt = "evento23">
+            <img id = "favorito23" src = "img/favorito.png">
+        </div>
+    </div>
+
+<!-- Criamos uma div, onde nela vamos ter um slideShow com os principais eventos do momento -->
+    <div id = "EventosM">
+        <label> EVENTOS DO MOMENTO </label>
+        <div class = "container">
+        
+            <div class = "momento fade">
+                <img class = "evento3" src = "img/evento24.jpg" alt = "evento24">
+            </div>
+    
+            <div class = "momento fade">
+                <img class = "evento3" src = "img/evento25.jpg" alt = "evento25">
+            </div>
+    
+            <div class = "momento fade">
+                <img class = "evento3" src = "img/evento26.jpg" alt = "evento26">
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+</body>
+</html>

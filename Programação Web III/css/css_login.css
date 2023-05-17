@@ -1,0 +1,137 @@
+/* importando a fonte Montserrat do Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@500&display=swap');
+
+/* Colocando a fonte em toda a tela html*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Definindo a estilização do elemento com ID "logo"*/
+#logo{
+    width: 650px;
+    height: 600px;
+}
+
+/* Definindo a estilização do elemento com ID "divLogo"*/
+#divLogo{
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+/* Essa parte  estiliza um elemento div com o ID "divForm", criando um contêiner de formulário  defininindo suas características,
+dimensões definidas e uma posição relativa com um deslocamento específico para cima, para a direita e para a esquerda em relação 
+ao seu elemento pai. O layout flexível é usado para centralizar os elementos filho vertical e horizontalmente no contêiner do formulário.*/
+#divLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f2e9f4;
+    /*border: 2px solid #86b9d7;*/
+    border-radius: 9px;
+    width: 35%;
+    height: 65%;
+    top: 10%;
+    left: 55%;
+}
+
+#login{
+    color:#333333;
+    top: 15px;
+    left: 40px;
+    height: 10%;
+    width: 10%;
+    background-color: #f2e9f4;
+    border: 0px;
+    font-size: 20;
+}
+
+hr{
+    size: 1;
+    width: 14%;
+    position: relative;
+    left: -245px;
+    top: -210px;
+    border-color: #770089;
+}
+
+/* Definindo a estilização do elemento com ID "formulario"*/
+#formulario{
+    position: absolute;
+    top: 100px;
+}
+
+/* Definindo a estilização do elemento com ID "emEmail"*/
+#emEmail{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #770089 solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+/* Definindo a estilização do elemento com ID "pwdSenha"*/
+#pwdSenha{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #770089 solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+/* Definindo a estilização do elemento com ID "recuperacao"*/
+#recuperacao{
+    position: relative;
+    color: black;
+    top: -10px;
+    left: 390px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Definindo a estilização do elemento button*/
+button{
+    cursor: pointer;
+    position: absolute;
+    top: 260px;
+    left: 55px;
+    border: solid 2px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    background-color: #770089;
+    text-align: center;
+    height: 40px;
+    width: 550px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Definindo a estilização do elemento com ID "cadastrar"*/
+#cadastrar{
+    position: relative;
+    color: #b25abf;
+    top: 535px;
+    left: 710px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Definindo a estilização do html scrollbar*/
+html ::-webkit-scrollbar {
+    height: 14px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #770089;
+}
+
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
