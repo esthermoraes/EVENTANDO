@@ -104,7 +104,6 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
  #### 14.2. APRESENTAÇÃO EM VÍDEO
 
 <br>
-<br>
 
 ##### About Formatting
     https://help.github.com/articles/about-writing-and-formatting-on-github/
