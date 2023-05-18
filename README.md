@@ -58,11 +58,66 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 ![MC](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloConceitual.png?raw=true "Modelo Conceitual")
       
 ### 7. DESCRIÇÃO DOS DADOS<br>
-    [objeto]: [descrição do objeto]
-    
-    EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.
+    USUARIO: Tabela que armazena as informações relativas ao usuário.
+        id_usuario: campo que armazena um código único relativo a cada usuario.
+        nome_usuario: campo referente ao nome do usuário.
+        cpf: campo referente ao CPF do usuário.
+        data_nasc: campo referente a data de nascimento do usuário.
+        telefone: campo que armazena o número do usuário.
+        email: campo que armazena o email do usuário.
+        senha: campo que armazena a autenticação do email.
+        
+    EVENTO: Tabela que armazena as informações relativas ao evento.
+        id_evento: campo que armazena um código único relativo a cada evento.
+        nome_evento: campo referente ao nome do evento.
+        objetivo: campo referente ao objetivo do evento.
+        data_prevista: campo referente a data prevista do evento.
+        privacidade_restrita: campo referente a privacidade do evento.
+        atracoes: campo referente as atrações do evento.
+        horario: campo referente ao horário do evento.
+
+    TIPO_CONTATO: Tabela que armazena as informações relativas ao tipo contato.
+        id_tipo_contato: campo que armazena um código único relativo a cada tipo_contato.
+        contato: campo que possui o contato de cada tipo contato.
+
+    Possui (EVENTO_TIPO_CONTATO): Tabela que armazena as informações relativas ao possui.
+        descricao: campo que possui a descrição do tipo contato do evento.
+
+    EVENTO_PRESENCIAL:
+        buffet:
+
+    LOCALIZACAO:
+        id_localizacao:
+
+    TIPO_LOGRADOURO:
+        id_tipo_logradouro:
+        tipo_logradouro:
+
+    BAIRRO:
+        id_bairro:
+        bairro:
+
+    CIDADE:
+        id_cidade:
+        cidade:
+
+    ESTADO:
+        id_estado:
+        estado:
+
+    EVENTO_ONLINE:
+        plataforma:
+        link:
+
+    CONVITE: Tabela que armazena as informações relativas ao convite.
+        id_convite: campo que armazena um código único relativo a cada convite.
+        cores: campo que possui a cor do convite.
+        estilo: campo que possui o estilo do convite.
+
+    LISTA_CONVIDADOS: Tabela que armazena as informações relativas a lista de convidados.
+        id_lista_convidados: campo que armazena um código único relativo a cada lista de convidado.
+        nome_convidado: campo que armazena o nome do convidado.
+        email_convidado: campo que armazena o email do convdado.
 
 ### 8.	RASTREABILIDADE DOS ARTEFATOS<br>
         a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
