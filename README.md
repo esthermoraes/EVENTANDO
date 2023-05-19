@@ -44,15 +44,12 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+> A Eventando precisa inicialmente dos seguintes relatórios:
+* Relatório que informe o evento mais favoritado: criador do evento, nome do evento e o formato.
+* Relatório que vai informar o público atingido: id e data de nascimento do usuário.
+* Relatório que informe o formato de evento mais criado: id e formato do evento.
+* Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
+* Relatório que vai informar o tipo contato mais ofertado nos eventos em ordem crescentes: id e o contato do tipo de contato.
  
  ### 6. MODELO CONCEITUAL<br>
 ![MC](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloConceitual.png?raw=true "Modelo Conceitual")
@@ -83,31 +80,31 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
     Possui (EVENTO_TIPO_CONTATO): Tabela que armazena as informações relativas ao possui.
         descricao: campo que possui a descrição do tipo contato do evento.
 
-    EVENTO_PRESENCIAL:
-        buffet:
+    EVENTO_PRESENCIAL:Tabela que armazena as informações relativas ao evento presencial.
+        buffet: campo que possui o buffet do evento presencial.
 
-    LOCALIZACAO:
-        id_localizacao:
+    LOCALIZACAO: Tabela que armazena as informações relativas a localização.
+        id_localizacao: campo que armazena um código único relativo a cada localização.
 
-    TIPO_LOGRADOURO:
-        id_tipo_logradouro:
-        tipo_logradouro:
+    TIPO_LOGRADOURO: Tabela que armazena as informações relativas ao tipo logradouro.
+        id_tipo_logradouro: campo que armazena um código único relativo a cada tipo logradouro.
+        tipo_logradouro: campo que possui os tipo de logradouros do tipo logradouro.
 
-    BAIRRO:
-        id_bairro:
-        bairro:
+    BAIRRO: Tabela que armazena as informações relativas ao bairro.
+        id_bairro: campo que armazena um código único relativo a cada bairro.
+        bairro: campo que possui os bairros do bairro.
 
-    CIDADE:
-        id_cidade:
-        cidade:
+    CIDADE: Tabela que armazena as informações relativas a cidade.
+        id_cidade: campo que armazena um código único relativo a cada cidade.
+        cidade: campo que possui as cidades da cidade.
 
-    ESTADO:
-        id_estado:
-        estado:
+    ESTADO: Tabela que armazena as informações relativas ao estado.
+        id_estado: campo que armazena um código único relativo a cada estado.
+        estado: campo que possui os estados do estado.
 
-    EVENTO_ONLINE:
-        plataforma:
-        link:
+    EVENTO_ONLINE: Tabela que armazena as informações relativas ao evento online.
+        plataforma: campo que possui a plataforma do evento online.
+        link: campo que possui o link do evento online.
 
     CONVITE: Tabela que armazena as informações relativas ao convite.
         id_convite: campo que armazena um código único relativo a cada convite.
@@ -128,13 +125,209 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 ![ML](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloLogico.png?raw=true "Modelo Lógico")
 
 ### 10.	MODELO FÍSICO<br>
-        a) inclusão das instruções de criacão das estruturas em SQL/DDL 
-        (criação de tabelas, alterações, etc..) 
+    – drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, PLATAFORMA, FAVORITA, BAIRRO_CIDADE, CIDADE_ESTADO, EVENTO_TIPO_CONTATO
+
+    CREATE TABLE USUARIO (
+        id_usuario serial PRIMARY KEY,
+        nome_usuario varchar (50),
+        cpf varchar (14),
+        data_nasc date,
+        telefone varchar (14),
+        email varchar (30),
+        senha varchar (20)
+    );
+
+    CREATE TABLE EVENTO_PRESENCIAL (
+        buffet varchar (50),
+        FK_EVENTO_id_evento integer PRIMARY KEY,
+        FK_LOCALIZACAO_id_localizacao integer 
+    );
+
+    CREATE TABLE EVENTO_ONLINE (
+        link varchar (150),
+        FK_plataforma_id_plataforma integer,
+        FK_EVENTO_id_evento integer PRIMARY KEY
+    );
+
+    CREATE TABLE EVENTO (
+        objetivo varchar (255),
+        data_prevista date,
+        atracoes varchar (255),
+        privacidade_restrita BOOL,
+        horario serial,
+        nome_evento varchar (50),
+        id_evento serial PRIMARY KEY,
+        FK_USUARIO_id_usuario integer 
+    );
+
+    CREATE TABLE CONVITE (
+        estilo varchar (20),
+        cores varchar (15),
+        id_convite serial PRIMARY KEY,
+        FK_EVENTO_id_evento integer 
+    );
+
+    CREATE TABLE LISTA_CONVIDADOS (
+        nome_convidado varchar (50),
+        id_lista_convidados serial PRIMARY KEY,
+        email_convidado varchar (30),
+        FK_CONVITE_id_convite integer 
+    );
+
+    CREATE TABLE LOCALIZACAO (
+        numero INTEGER,
+        logradouro varchar (255),
+        cep varchar (9),
+        id_localizacao serial PRIMARY KEY,
+        FK_TIPO_LOGRADOURO_id_tipo_logradouro integer,
+        FK_BAIRRO_id_bairro integer 
+    );
+
+    CREATE TABLE TIPO_LOGRADOURO (
+        tipo_logradouro varchar (30),
+        id_tipo_logradouro serial PRIMARY KEY
+    );
+
+    CREATE TABLE BAIRRO (
+        bairro varchar (255),
+        id_bairro serial PRIMARY KEY
+    );
+
+    CREATE TABLE CIDADE (
+        cidade varchar (255),
+        id_cidade serial PRIMARY KEY
+    );
+
+    CREATE TABLE ESTADO (
+        estado varchar (255),
+        id_estado serial PRIMARY KEY
+    );
+
+    CREATE TABLE TIPO_CONTATO (
+        id_tipo_contato serial PRIMARY KEY,
+        contato varchar (50)
+    );
+
+    CREATE TABLE PLATAFORMA (
+        id_plataforma serial NOT NULL PRIMARY KEY,
+        plataforma varchar (50)
+    );
+
+    CREATE TABLE FAVORITA (
+        FK_EVENTO_id_evento integer,
+        FK_USUARIO_id_usuario integer 
+    );
+
+    CREATE TABLE BAIRRO_CIDADE (
+        FK_BAIRRO_id_bairro integer,
+        FK_CIDADE_id_cidade integer 
+    );
+
+    CREATE TABLE CIDADE_ESTADO (
+        FK_CIDADE_id_cidade integer,
+        FK_ESTADO_id_estado integer 
+    );
+
+    CREATE TABLE EVENTO_TIPO_CONTATO (
+        FK_TIPO_CONTATO_id_tipo_contato integer,
+        FK_EVENTO_id_evento integer,
+        descricao varchar (255)
+    );
+
+    ALTER TABLE EVENTO_PRESENCIAL ADD CONSTRAINT FK_EVENTO_PRESENCIAL_2
+        FOREIGN KEY (FK_EVENTO_id_evento)
+        REFERENCES EVENTO (id_evento)
+        ON DELETE CASCADE;
+
+    ALTER TABLE EVENTO_PRESENCIAL ADD CONSTRAINT FK_EVENTO_PRESENCIAL_3
+        FOREIGN KEY (FK_LOCALIZACAO_id_localizacao)
+        REFERENCES LOCALIZACAO (id_localizacao)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE EVENTO_ONLINE ADD CONSTRAINT FK_EVENTO_ONLINE_2
+        FOREIGN KEY (FK_plataforma_id_plataforma)
+        REFERENCES PLATAFORMA (id_plataforma)
+        ON DELETE NO ACTION;
+
+    ALTER TABLE EVENTO_ONLINE ADD CONSTRAINT FK_EVENTO_ONLINE_3
+        FOREIGN KEY (FK_EVENTO_id_evento)
+        REFERENCES EVENTO (id_evento)
+        ON DELETE CASCADE;
+
+    ALTER TABLE EVENTO ADD CONSTRAINT FK_EVENTO_2
+        FOREIGN KEY (FK_USUARIO_id_usuario)
+        REFERENCES USUARIO (id_usuario)
+        ON DELETE CASCADE;
+
+    ALTER TABLE CONVITE ADD CONSTRAINT FK_CONVITE_2
+        FOREIGN KEY (FK_EVENTO_id_evento)
+        REFERENCES EVENTO (id_evento)
+        ON DELETE CASCADE;
+
+    ALTER TABLE LISTA_CONVIDADOS ADD CONSTRAINT FK_LISTA_CONVIDADOS_2
+        FOREIGN KEY (FK_CONVITE_id_convite)
+        REFERENCES CONVITE (id_convite)
+        ON DELETE CASCADE;
+
+    ALTER TABLE LOCALIZACAO ADD CONSTRAINT FK_LOCALIZACAO_2
+        FOREIGN KEY (FK_TIPO_LOGRADOURO_id_tipo_logradouro)
+        REFERENCES TIPO_LOGRADOURO (id_tipo_logradouro)
+        ON DELETE CASCADE;
+
+    ALTER TABLE LOCALIZACAO ADD CONSTRAINT FK_LOCALIZACAO_3
+        FOREIGN KEY (FK_BAIRRO_id_bairro)
+        REFERENCES BAIRRO (id_bairro)
+        ON DELETE CASCADE;
+
+    /*ALTER TABLE TIPO_CONTATO ADD CONSTRAINT FK_TIPO_CONTATO_2
+        FOREIGN KEY (FK_contato_contato_PK???)
+        REFERENCES ??? (???)
+        ON DELETE NO ACTION;*/
+
+    ALTER TABLE FAVORITA ADD CONSTRAINT FK_FAVORITA_1
+        FOREIGN KEY (FK_EVENTO_id_evento)
+        REFERENCES EVENTO (id_evento)
+        ON DELETE SET NULL;
+
+    ALTER TABLE FAVORITA ADD CONSTRAINT FK_FAVORITA_2
+        FOREIGN KEY (FK_USUARIO_id_usuario)
+        REFERENCES USUARIO (id_usuario)
+        ON DELETE SET NULL;
+
+    ALTER TABLE BAIRRO_CIDADE ADD CONSTRAINT FK_BAIRRO_CIDADE_1
+        FOREIGN KEY (FK_BAIRRO_id_bairro)
+        REFERENCES BAIRRO (id_bairro)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE BAIRRO_CIDADE ADD CONSTRAINT FK_BAIRRO_CIDADE_2
+        FOREIGN KEY (FK_CIDADE_id_cidade)
+        REFERENCES CIDADE (id_cidade)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE CIDADE_ESTADO ADD CONSTRAINT FK_CIDADE_ESTADO_1
+        FOREIGN KEY (FK_CIDADE_id_cidade)
+        REFERENCES CIDADE (id_cidade)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE CIDADE_ESTADO ADD CONSTRAINT FK_CIDADE_ESTADO_2
+        FOREIGN KEY (FK_ESTADO_id_estado)
+        REFERENCES ESTADO (id_estado)
+        ON DELETE RESTRICT;
+
+    ALTER TABLE EVENTO_TIPO_CONTATO ADD CONSTRAINT FK_EVENTO_TIPO_CONTATO_1
+        FOREIGN KEY (FK_TIPO_CONTATO_id_tipo_contato)
+        REFERENCES TIPO_CONTATO (id_tipo_contato)
+        ON DELETE SET NULL;
+
+    ALTER TABLE EVENTO_TIPO_CONTATO ADD CONSTRAINT FK_EVENTO_TIPO_CONTATO_2
+        FOREIGN KEY (FK_EVENTO_id_evento)
+        REFERENCES EVENTO (id_evento)
+        ON DELETE SET NULL;
+
                
 ### 11.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados 
- <br> + insert para dados a serem inseridos)
+        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
         b) Criar um novo banco de dados para testar a restauracao 
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
