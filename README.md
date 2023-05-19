@@ -30,8 +30,8 @@ b) *Link para a apresentação dos resultados obtidos:* <br> https://docs.google
 
 ### 4. PERSONAS E HISTÓRIAS DO USUÁRIO<br>
 a) *Personas:* <br>
-![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1") <br>
-![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2") <br>
+![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1") 
+![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2") 
 ![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Personas 3") <br>
 
 b) *Histórias de usuário:* <br>
