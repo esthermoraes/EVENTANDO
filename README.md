@@ -29,11 +29,14 @@ a) *Link do formulário desenvolvido:* <br> https://forms.gle/N2CqQ6gud3GgbyrM7 
 b) *Link para a apresentação dos resultados obtidos:* <br> https://docs.google.com/presentation/d/1XUWC29nwCR0yTu5YozbTAOvrGHfRM9QFxhOgyI0ivOI/edit?usp=sharing
 
 ### 4. PERSONAS E HISTÓRIAS DO USUÁRIO<br>
-<img src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" Personas src="https://neilpatel.com/wp-content/uploads/2019/07/exemplo-carlos.png" width="500" height="500" /> <br>
-a) inclusão dos Persons desenvolvidos pelo grupo<br>
+a) *Personas:* <br>
+![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1")
+![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2")
+![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Personas 3")
 <br>
+
+b) *Histórias de usuário:*
 <img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> <br>
-b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 
 ### 5. PROTÓTIPOS DO SISTEMA<br>
 
