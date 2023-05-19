@@ -83,31 +83,31 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
     Possui (EVENTO_TIPO_CONTATO): Tabela que armazena as informações relativas ao possui.
         descricao: campo que possui a descrição do tipo contato do evento.
 
-    EVENTO_PRESENCIAL:
-        buffet:
+    EVENTO_PRESENCIAL:Tabela que armazena as informações relativas ao evento presencial.
+        buffet: campo que possui o buffet do evento presencial.
 
-    LOCALIZACAO:
-        id_localizacao:
+    LOCALIZACAO: Tabela que armazena as informações relativas a localização.
+        id_localizacao: campo que armazena um código único relativo a cada localização.
 
-    TIPO_LOGRADOURO:
-        id_tipo_logradouro:
-        tipo_logradouro:
+    TIPO_LOGRADOURO: Tabela que armazena as informações relativas ao tipo logradouro.
+        id_tipo_logradouro: campo que armazena um código único relativo a cada tipo logradouro.
+        tipo_logradouro: campo que possui os tipo de logradouros do tipo logradouro.
 
-    BAIRRO:
-        id_bairro:
-        bairro:
+    BAIRRO: Tabela que armazena as informações relativas ao bairro.
+        id_bairro: campo que armazena um código único relativo a cada bairro.
+        bairro: campo que possui os bairros do bairro.
 
-    CIDADE:
-        id_cidade:
-        cidade:
+    CIDADE: Tabela que armazena as informações relativas a cidade.
+        id_cidade: campo que armazena um código único relativo a cada cidade.
+        cidade: campo que possui as cidades da cidade.
 
-    ESTADO:
-        id_estado:
-        estado:
+    ESTADO: Tabela que armazena as informações relativas ao estado.
+        id_estado: campo que armazena um código único relativo a cada estado.
+        estado: campo que possui os estados do estado.
 
-    EVENTO_ONLINE:
-        plataforma:
-        link:
+    EVENTO_ONLINE: Tabela que armazena as informações relativas ao evento online.
+        plataforma: campo que possui a plataforma do evento online.
+        link: campo que possui o link do evento online.
 
     CONVITE: Tabela que armazena as informações relativas ao convite.
         id_convite: campo que armazena um código único relativo a cada convite.
