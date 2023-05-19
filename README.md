@@ -44,15 +44,12 @@ b) inclusão das Histórias de usuário desenvolvidas pelo grupo
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
-    a) O sistema proposto poderá fornecer quais tipos de relatórios e informaçes? 
-    b) Crie uma lista com os 5 principais relatórios que poderão ser obtidos por meio do sistema proposto!
-    
-> A Empresa DevCom precisa inicialmente dos seguintes relatórios:
-* Relatório que informe quais são os gerentes de cada departamento incluindo as seguintes informações: número do departamento,  nome do departamento, e nome do gerente.
-* Relatório de empregados por projeto incluindo as seguintes informações: número do projeto, nome do projeto, rg do empregado, nome do empregado e quantidade de horas de trabalho do empregado alocadas ao projeto.
-* Relatório de empregados com dependentes incluindo as seguintes informações: rg do empregado, nome do empregado, nome do dependente, tipo de relação, data de nascimento do dependente e sexo do dependente.
-* Relatório com a quantidade de empregados por cada departamento incluindo as seguintes informações: nome do departamento, supervisor e quantidade de empregados alocados no departamento.
-* Relatório de supervisores e supervisionados incluindo as seguintes informações: nome do supervisor e nome do supervisionado.
+> A Eventando precisa inicialmente dos seguintes relatórios:
+* Relatório que informe o evento mais favoritado: criador do evento, nome do evento e o formato.
+* Relatório que vai informar o público atingido: id e data de nascimento do usuário.
+* Relatório que informe o formato de evento mais criado: id e formato do evento.
+* Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
+* Relatório que vai informar o tipo contato mais ofertado nos eventos em ordem crescentes: id e o contato do tipo de contato.
  
  ### 6. MODELO CONCEITUAL<br>
 ![MC](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloConceitual.png?raw=true "Modelo Conceitual")
