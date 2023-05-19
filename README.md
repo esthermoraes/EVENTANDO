@@ -17,7 +17,7 @@ Sofia Andrade Nascimento - andradesoso17@gmail.com
 
 #### 3.1. EAP - ESTRUTURA ANALÍTICA DO PROJETO<br>
 a) ![EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_EAP.png?raw=true "Estrutura Analítica do Projeto")
-b.1) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP1.png?raw=true "Dicionário EAP 1")
+b.1) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP1.png?raw=true "Dicionário EAP 1") <br>
 b.2) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP2.png?raw=true "Dicionário EAP 2") 
 
 #### 3.2. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS<br>
@@ -30,8 +30,8 @@ b) *Link para a apresentação dos resultados obtidos:* <br> https://docs.google
 
 ### 4. PERSONAS E HISTÓRIAS DO USUÁRIO<br>
 a) *Personas:* <br>
-![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1") 
-![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2") 
+![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1") <br>
+![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2") <br>
 ![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Personas 3") <br>
 
 b) *Histórias de usuário:* <br>
