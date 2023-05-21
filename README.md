@@ -35,7 +35,7 @@ a) *Personas:* <br>
 ![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Persona 3") 
 
 b) *Histórias de usuário:* <br>
-<img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> 
+![História de usuário](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario1.png?raw=true "História de usuário")  
 
 ### 5. PROTÓTIPOS DO SISTEMA<br>
 
@@ -46,7 +46,7 @@ b) *Histórias de usuário:* <br>
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
-> A Eventando precisa inicialmente dos seguintes relatórios:
+> O sistema Eventando precisa inicialmente dos seguintes relatórios:
 * Relatório que informe o evento mais favoritado: criador do evento, nome do evento e o formato.
 * Relatório que vai informar o público atingido: id e data de nascimento do usuário.
 * Relatório que informe o formato de evento mais criado: id e formato do evento.
