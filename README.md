@@ -17,7 +17,7 @@ Sofia Andrade Nascimento - andradesoso17@gmail.com
 
 #### 3.1. EAP - ESTRUTURA ANALÍTICA DO PROJETO<br>
 a) ![EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_EAP.png?raw=true "Estrutura Analítica do Projeto")
-b.1) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP1.png?raw=true "Dicionário EAP 1") <br>
+b.1) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP1.png?raw=true "Dicionário EAP 1") 
 b.2) ![Dicionário EAP](https://github.com/esthermoraes/EVENTANDO/blob/main/Desenvolvimento%20do%20sistema/img_dicionarioEAP2.png?raw=true "Dicionário EAP 2") 
 
 #### 3.2. REQUISITOS FUNCIONAIS E NÃO FUNCIONAIS<br>
@@ -30,9 +30,9 @@ b) *Link para a apresentação dos resultados obtidos:* <br> https://docs.google
 
 ### 4. PERSONAS E HISTÓRIAS DO USUÁRIO<br>
 a) *Personas:* <br>
-![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Personas 1")
-![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Personas 2")
-![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Personas 3") 
+![Personas 1](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona1.png?raw=true "Persona 1") 
+![Personas 2](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona2.png?raw=true "Persona 2")
+![Personas 3](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/persona3.png?raw=true "Persona 3") 
 
 b) *Histórias de usuário:* <br>
 <img src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" UserStory src="https://miro.medium.com/max/1400/1*r5GVnOvqpMdxnGUYNRXqbg.png" width="500" height="300" /> 
@@ -46,7 +46,7 @@ b) *Histórias de usuário:* <br>
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
-> O sistema Eventando precisa inicialmente dos seguintes relatórios:
+> A Eventando precisa inicialmente dos seguintes relatórios:
 * Relatório que informe o evento mais favoritado: criador do evento, nome do evento e o formato.
 * Relatório que vai informar o público atingido: id e data de nascimento do usuário.
 * Relatório que informe o formato de evento mais criado: id e formato do evento.
