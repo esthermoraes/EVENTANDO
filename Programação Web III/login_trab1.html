@@ -6,17 +6,60 @@
 	<!-- CSS externo-->
     <link rel="stylesheet" type="text/css" href="css/css_login.css" /> 
 	<title> LOGIN </title>
+
+	<script src = 'js/js_login.js' defer></script>
+
 </head>
 
-<body bgcolor = 'bedef2'>
-<script src = 'js/js_login.js' defer></script>
+<body bgcolor = 'bedef2' onload="exibirpadrao()">
+
 	<div id = "divLogo" name = "divLogo">
 		<img id = logo src = "img/logo_login.png">
 	</div> <br> <br>
 
+	<div id = "divLogin" name = "divLogin">
+		<button id="login" onclick = "exibirLogin()"> LOGIN </button>
+		<button id="cadastro" onclick = "exibirCadastro()"> CADASTRO </button>
+        <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
+        <form id = "formulario"> 
+            <input type = "email" id = "emEmail" placeholder = "Email">
+            <br> <br> <br> 
+
+            <input type = "password" id = "pwdSenha" placeholder = "Senha">
+			<br> <br>
+
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<label class="form-check-label" for="flexCheckChecked"> Manter-se conectado </label>
+			</div>
+
+			<a href="#" id = "recuperacao"  onclick="exibirRecuperar()"> ESQUECI MINHA SENHA? </a>
+        </form>
+
+        <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
+        <a href = "menu_trab1.html"> 
+			<button type = "submit"> ENTRAR </button>
+		</a>
+    </div>
+
+	<div id = "divRecuperar" name = "divRecuperar">
+            <!-- Formulário RECUPERAÇÃO DE SENHA, com um campos de entrada para o email-->
+            <form id = "formulario">
+			<label id = "txt_rec"> Para recuperarmos sua senha, informe seu endereço de e-mail. </label> 
+			<br> <br>
+
+            <input type = "email" id = "emEmail" placeholder = "Email"> 
+            <br>
+        </form> 
+        
+        <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
+        <button type = "submit"> ENVIAR </button> 
+
+    </div>
+
 	<div id = "divCadastro" name = "divCadastro">
-		<button id="login2" onclick = "exibirCaluno()"> LOGIN </button>
-		<button id="cadastro2" onclick = "exibirCprofessor()"> CADASTRO </button>
+		<button id="login2" onclick = "exibirLogin()"> LOGIN </button>
+		<button id="cadastro2" onclick = "exibirCadastro()"> CADASTRO </button>
 
         <!-- Formulário CADADTRO, com sete campos de entrada, para nome, CPF, data de nascimento, telefone, email, senha e confirmação de senha -->
         <form id = "formulario">
@@ -46,31 +89,6 @@
         <a href = "login_trab1.html"> 
             <button type = "submit" id="cadastrar"> CADASTRAR </button>
         </a>
-    </div>
-
-	<div id = "divLogin" name = "divLogin">
-		<button id="login" onclick = "exibirCaluno()"> LOGIN </button>
-		<button id="cadastro" onclick = "exibirCprofessor()"> CADASTRO </button>
-        <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
-        <form id = "formulario"> 
-            <input type = "email" id = "emEmail" placeholder = "Email">
-            <br> <br> <br> 
-
-            <input type = "password" id = "pwdSenha" placeholder = "Senha">
-			<br> <br>
-
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-				<label class="form-check-label" for="flexCheckChecked"> Manter-se conectado </label>
-			</div>
-
-			<a id = "recuperacao" href="recuperacao_trab1.html"> ESQUECI MINHA SENHA? </a>
-        </form>
-
-        <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
-        <a href = "menu_trab1.html"> 
-			<button type = "submit"> ENTRAR </button>
-		</a>
     </div>
 
 </body>
