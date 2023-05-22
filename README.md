@@ -334,7 +334,7 @@ b) *Histórias de usuário:* <br>
         (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
-#### 12. PRINCIPAIS CONSULTAS DO SISTEMA<br> 
+### 12. PRINCIPAIS CONSULTAS DO SISTEMA<br> 
  Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
  <br>
   a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
