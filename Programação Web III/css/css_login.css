@@ -190,6 +190,73 @@ button{
     color: white;
 }
 
+#divRecuperar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #f2e9f4;
+    /*border: 2px solid #86b9d7;*/
+    border-radius: 9px;
+    width: 35%;
+    height: 65%;
+    top: 10%;
+    left: 55%;
+}
+
+#rec_senha{
+    position: absolute;
+    color:#333333;
+    top: 30px;
+    left: 40px;
+    height: 7%;
+    width: 45%;
+    background-color: #f2e9f4;
+    border-bottom: 3px solid #770089;
+    border-top:#f2e9f4;
+    border-left: #f2e9f4;
+    border-right: #f2e9f4;
+    border-radius: 0px;
+    font-size: 20;
+    font-weight: bold;
+    text-align: center;
+}
+
+#formulario3{
+    position: absolute;
+    top: 100px;
+}
+
+#txt_rec{
+    width: 530px;
+    position: absolute;
+    top: 50px; 
+    left: 40px;
+    font-size: 16px;
+    color: #424242;
+}
+
+#emEmail3{
+    position: absolute;
+    top: 100px; 
+    left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#enviar{
+    top: 270px;
+    position: relative;
+    left: 5.5%;
+    background-color: #770089;
+    width: 558px;
+    height: 40px; 
+}
+
 #divCadastro{
     display: flex;
     align-items: center;
@@ -324,73 +391,6 @@ button{
     background-color: #37008a;
     width: 555px;
     height: 40px;
-}
-
-#divRecuperar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: #f2e9f4;
-    /*border: 2px solid #86b9d7;*/
-    border-radius: 9px;
-    width: 35%;
-    height: 65%;
-    top: 10%;
-    left: 55%;
-}
-
-#rec_senha{
-    position: absolute;
-    color:#333333;
-    top: 30px;
-    left: 40px;
-    height: 7%;
-    width: 45%;
-    background-color: #f2e9f4;
-    border-bottom: 3px solid #770089;
-    border-top:#f2e9f4;
-    border-left: #f2e9f4;
-    border-right: #f2e9f4;
-    border-radius: 0px;
-    font-size: 20;
-    font-weight: bold;
-    text-align: center;
-}
-
-#formulario3{
-    position: absolute;
-    top: 100px;
-}
-
-#txt_rec{
-    width: 530px;
-    position: absolute;
-    top: 50px; 
-    left: 40px;
-    font-size: 16px;
-    color: #424242;
-}
-
-#emEmail3{
-    position: absolute;
-    top: 100px; 
-    left: 40px;
-    font-family: 'Montserrat', sans-serif;
-    color: #333333;
-    border: #37008a solid 1px;
-    border-radius: 8px;
-    width: 550px;
-    height: 30px;
-}
-
-#enviar{
-    top: 270px;
-    position: relative;
-    left: 5.5%;
-    background-color: #770089;
-    width: 558px;
-    height: 40px; 
 }
 
 /* Definindo a estilização do html scrollbar*/
