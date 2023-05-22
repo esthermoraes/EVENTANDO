@@ -21,8 +21,8 @@ function exibirCprofessor(){
     let btn_professor = document.getElementById('cadastro');
 
     btn_professor.addEventListener('click', function() {
-        let containerP = document.getElementById('divLogin');
-        let containerA = document.getElementById('divCadastro');
+        let containerP = document.getElementById('divCadastro');
+        let containerA = document.getElementById('divLogin');
 
         if (containerP.style.display != 'block') {
             containerP.style.display = 'block';
