@@ -72,7 +72,9 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
-#emEmail{
+#emEmail1{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #770089 solid 1px;
@@ -82,7 +84,9 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 }
 
 /* Definindo a estilização do elemento com ID "pwdSenha"*/
-#pwdSenha{
+#pwdSenha1{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #770089 solid 1px;
@@ -153,6 +157,20 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     transform: rotate(45deg);
 }
 
+/* Definindo a estilização do elemento com ID "recuperacao"*/
+#recuperacao{
+    position: relative;
+    color: black;
+    top: -17px;
+    left: 425px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#entrar{
+    left: 7%;
+}
+
 /* Definindo a estilização do elemento button*/
 button{
     cursor: pointer;
@@ -170,16 +188,6 @@ button{
     font-size: 15px;
     font-weight: bold;
     color: white;
-}
-
-/* Definindo a estilização do elemento com ID "recuperacao"*/
-#recuperacao{
-    position: relative;
-    color: black;
-    top: -17px;
-    left: 390px;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 #divCadastro{
@@ -225,12 +233,14 @@ button{
 }
 
 /* Definindo a estilização do elemento com ID "formulario"*/
-#formulario{
+#formulario2{
     position: absolute;
     top: 100px;
 }
 
 #txtNome{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -240,6 +250,8 @@ button{
 }
 
 #txtCpf{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -249,6 +261,8 @@ button{
 }
 
 #date{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -258,6 +272,8 @@ button{
 }
 
 #telTelefone{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -268,6 +284,8 @@ button{
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
 #emEmail2{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -278,6 +296,8 @@ button{
 
 /* Definindo a estilização do elemento com ID "pwdSenha"*/
 #pwdSenha2{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -287,6 +307,8 @@ button{
 }
 
 #pwdConfSenha{
+    position: relative;
+    left: 7%;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -296,8 +318,12 @@ button{
 }
 
 #cadastrar{
-    top: 450px; 
+    top: 450px;
+    position: relative;
+    left: 5.5%;
     background-color: #37008a;
+    width: 555px;
+    height: 40px;
 }
 
 #divRecuperar{
@@ -315,11 +341,12 @@ button{
 }
 
 #rec_senha{
+    position: absolute;
     color:#333333;
-    top: 15px;
+    top: 30px;
     left: 40px;
-    height: 10%;
-    width: 15%;
+    height: 7%;
+    width: 45%;
     background-color: #f2e9f4;
     border-bottom: 3px solid #770089;
     border-top:#f2e9f4;
@@ -327,10 +354,11 @@ button{
     border-right: #f2e9f4;
     border-radius: 0px;
     font-size: 20;
+    font-weight: bold;
     text-align: center;
 }
 
-#formulario{
+#formulario3{
     position: absolute;
     top: 100px;
 }
@@ -338,19 +366,31 @@ button{
 #txt_rec{
     width: 530px;
     position: absolute;
-    right: 250px;
-    left: -2px;
+    top: 50px; 
+    left: 40px;
     font-size: 16px;
     color: #424242;
 }
 
-#emEmail{
+#emEmail3{
+    position: absolute;
+    top: 100px; 
+    left: 40px;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
     border-radius: 8px;
     width: 550px;
     height: 30px;
+}
+
+#enviar{
+    top: 270px;
+    position: relative;
+    left: 5.5%;
+    background-color: #770089;
+    width: 558px;
+    height: 40px; 
 }
 
 /* Definindo a estilização do html scrollbar*/

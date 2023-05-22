@@ -20,14 +20,14 @@
 		<button id="cadastro" onclick = "exibirCadastro()"> CADASTRO </button>
         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
         <form id = "formulario"> 
-            <input type = "email" id = "emEmail" placeholder = "Email">
+            <input type = "email" id = "emEmail1" placeholder = "Email">
             <br> <br> <br> 
 
-            <input type = "password" id = "pwdSenha" placeholder = "Senha">
+            <input type = "password" id = "pwdSenha1" placeholder = "Senha">
 			<br> <br>
 
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
 				<label class="form-check-label" for="flexCheckChecked"> Manter-se conectado </label>
 			</div>
 
@@ -36,23 +36,23 @@
 
         <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
         <a href = "menu_trab1.html"> 
-			<button type = "submit"> ENTRAR </button>
+			<button type = "submit" id="entrar"> ENTRAR </button>
 		</a>
     </div>
 
 	<div id = "divRecuperar" name = "divRecuperar">
         <label id="rec_senha"> RECUPERAÇÃO DE SENHA </label>
             <!-- Formulário RECUPERAÇÃO DE SENHA, com um campos de entrada para o email-->
-            <form id = "formulario">
+            <form id = "formulario2">
 			<label id = "txt_rec"> Para recuperarmos sua senha, informe seu endereço de e-mail. </label> 
 			<br> <br>
 
-            <input type = "email" id = "emEmail" placeholder = "Email"> 
+            <input type = "email" id = "emEmail3" placeholder = "Email"> 
             <br>
         </form> 
         
         <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
-        <button type = "submit"> ENVIAR </button> 
+        <button type = "submit" id="enviar"> ENVIAR </button> 
 
     </div>
 
@@ -61,7 +61,7 @@
 		<button id="cadastro2" onclick = "exibirCadastro()"> CADASTRO </button>
 
         <!-- Formulário CADADTRO, com sete campos de entrada, para nome, CPF, data de nascimento, telefone, email, senha e confirmação de senha -->
-        <form id = "formulario">
+        <form id = "formulario3">
 			<input type = "text" id = "txtNome" placeholder = "Nome"> 
             <br> <br>
 
