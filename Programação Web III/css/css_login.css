@@ -50,7 +50,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     border-right: #f2e9f4;
     border-radius: 0px;
     font-size: 20;
-    align-items: center;
+    text-align: center;
 }
 
 #cadastro{
@@ -62,6 +62,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     background-color: #f2e9f4;
     border: 0px;
     font-size: 20;
+    text-align: center;
 }
 
 /* Definindo a estilização do elemento com ID "formulario"*/
@@ -204,7 +205,7 @@ button{
     background-color: #f2e9f4;
     border: 0px;
     font-size: 20;
-    align-items: center;
+    text-align: center;
 }
 
 #cadastro2{
@@ -220,6 +221,7 @@ button{
     border-right: #f2e9f4;
     border-radius: 0px;
     font-size: 20;
+    text-align: center;
 }
 
 /* Definindo a estilização do elemento com ID "formulario"*/
@@ -265,7 +267,7 @@ button{
 }
 
 /* Definindo a estilização do elemento com ID "emEmail"*/
-#emEmail{
+#emEmail2{
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -275,7 +277,7 @@ button{
 }
 
 /* Definindo a estilização do elemento com ID "pwdSenha"*/
-#pwdSenha{
+#pwdSenha2{
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
@@ -310,6 +312,22 @@ button{
     height: 65%;
     top: 10%;
     left: 55%;
+}
+
+#rec_senha{
+    color:#333333;
+    top: 15px;
+    left: 40px;
+    height: 10%;
+    width: 15%;
+    background-color: #f2e9f4;
+    border-bottom: 3px solid #770089;
+    border-top:#f2e9f4;
+    border-left: #f2e9f4;
+    border-right: #f2e9f4;
+    border-radius: 0px;
+    font-size: 20;
+    text-align: center;
 }
 
 #formulario{

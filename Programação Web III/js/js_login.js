@@ -2,21 +2,16 @@ var divCadastro = document.getElementById('divCadastro');
 var divLogin = document.getElementById('divLogin');  
 var divRecuperar = document.getElementById('divRecuperar');
 
-
-
 function exibirpadrao(){  
-    
     divLogin.style.display = 'block';
     divCadastro.style.display = 'none';
     divRecuperar.style.display = 'none';
-
 }
 
 function exibirLogin(){
     divLogin.style.display = 'block';
     divCadastro.style.display = 'none';
     divRecuperar.style.display = 'none';
-
 }
 
 function exibirCadastro(){
