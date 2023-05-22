@@ -35,6 +35,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     height: 65%;
     top: 10%;
     left: 55%;
+    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
 }
 
 #login{
@@ -203,6 +204,7 @@ button{
     height: 65%;
     top: 10%;
     left: 55%;
+    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
 }
 
 #rec_senha{
@@ -270,6 +272,7 @@ button{
     height: 65%;
     top: 10%;
     left: 55%;
+    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
 }
 
 #login2{
