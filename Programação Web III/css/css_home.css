@@ -154,6 +154,7 @@ html ::-webkit-scrollbar-track {
     font-size: 55px;
     position: absolute;
     left: 3.8%;
+    color: #770089;
 }
 
 /* Definindo a estilização do elemento com ID "sobre"*/

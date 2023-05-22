@@ -13,18 +13,29 @@
 		<img id = logo src = "img/logo_login.png">
 	</div> <br> <br>
      
-	<div id = "divForm" name = "divForm">
+	<div id = "divLogin" name = "divLogin">
+		<button id="login"> LOGIN </button>
+		<hr noshade>
         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
         <form id = "formulario"> 
             <input type = "email" id = "emEmail" placeholder = "Email">
-            <br> <br> 
+            <br> <br> <br> 
 
-            <input type = "password" id = "pwdSenha" placeholder = "Senha"> 
+            <input type = "password" id = "pwdSenha" placeholder = "Senha">
+			<br>
+
+			<label class="conexao"> 
+				Manter-se conectado
+				<input type="checkbox" checked="checked">
+				<span id="checkmark"></span>
+			</label>
+			  
+
         </form>
 		
         <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
         <a href = "menu_trab1.html"> 
-			<button type = "submit"> ENTRAR </button> 
+			<button type = "submit"> ENTRAR </button>
 		</a>
 
     </div>
