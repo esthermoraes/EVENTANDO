@@ -102,6 +102,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 12px;
+    font-weight: bold;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -150,7 +151,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     top: 5px;
     width: 5px;
     height: 10px;
-    border: solid #770089;
+    border: #770089 solid 1px;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -242,7 +243,7 @@ button{
     left: 40px;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
-    border: #37008a solid 1px;
+    border: #770089 solid 1px;
     border-radius: 8px;
     width: 550px;
     height: 30px;
