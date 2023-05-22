@@ -9,42 +9,69 @@
 </head>
 
 <body bgcolor = 'bedef2'>
+<script src = 'js/js_login.js' defer></script>
 	<div id = "divLogo" name = "divLogo">
 		<img id = logo src = "img/logo_login.png">
 	</div> <br> <br>
-     
+
+	<div id = "divCadastro" name = "divCadastro">
+		<button id="login2" onclick = "exibirCaluno()"> LOGIN </button>
+		<button id="cadastro2" onclick = "exibirCprofessor()"> CADASTRO </button>
+
+        <!-- Formulário CADADTRO, com sete campos de entrada, para nome, CPF, data de nascimento, telefone, email, senha e confirmação de senha -->
+        <form id = "formulario">
+			<input type = "text" id = "txtNome" placeholder = "Nome"> 
+            <br> <br>
+
+			<input type = "text" id = "txtCpf" placeholder = "CPF" pattern = "\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength = "11"> 
+            <br> <br>
+
+			<input type = "text" id = "date" placeholder = "Data de Nascimento" onfocus = "(this.type='date')" onblur = "(this.type='text')"> 
+            <br> <br>
+
+			<input type = "tel" id = "telTelefone" placeholder = "Telefone" pattern = "([0-9]{2})[0-9]{5}-[0-9]{4}" maxlength = "11"> 
+            <br> <br>
+
+            <input type = "email" id = "emEmail" placeholder = "Email"> 
+            <br> <br>
+
+			<input type = "password" id = "pwdSenha" placeholder = "Senha"> 
+            <br> <br>
+
+			<input type = "password" id = "pwdConfSenha" placeholder = "Confirmar Senha"> 
+            <br> <br>
+        </form> 
+        
+        <!-- botão "CADASTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
+        <a href = "login_trab1.html"> 
+            <button type = "submit" id="cadastrar"> CADASTRAR </button>
+        </a>
+    </div>
+
 	<div id = "divLogin" name = "divLogin">
-		<button id="login"> LOGIN </button>
-		<hr noshade>
+		<button id="login" onclick = "exibirCaluno()"> LOGIN </button>
+		<button id="cadastro" onclick = "exibirCprofessor()"> CADASTRO </button>
         <!-- Formulário LOGIN, com dois campos de entrada, um para o email e outro para a senha -->
         <form id = "formulario"> 
             <input type = "email" id = "emEmail" placeholder = "Email">
             <br> <br> <br> 
 
             <input type = "password" id = "pwdSenha" placeholder = "Senha">
-			<br>
+			<br> <br>
 
-			<label class="conexao"> 
-				Manter-se conectado
-				<input type="checkbox" checked="checked">
-				<span id="checkmark"></span>
-			</label>
-			  
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+				<label class="form-check-label" for="flexCheckChecked"> Manter-se conectado </label>
+			</div>
 
+			<a id = "recuperacao" href="recuperacao_trab1.html"> ESQUECI MINHA SENHA? </a>
         </form>
-		
+
         <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
         <a href = "menu_trab1.html"> 
 			<button type = "submit"> ENTRAR </button>
 		</a>
-
     </div>
-	<div class="rec_cad">
-		<!-- Temos um a que ao clicar redireciona para a página RECUPERAÇÃO DE SENHA  ESTHER CHATA PRA CACETE-->
-		<a id = "recuperacao" href="recuperacao_trab1.html" target = "_blank"> ESQUECI MINHA SENHA? </a>
-		<!-- Temos um a que ao clicar redireciona para a página CADASTRO -->
-		<a id = "cadastrar" href="cadastrar_trab1.html"> CADASTRE-SE </a>
-	</div>
 
 </body>
 </html>

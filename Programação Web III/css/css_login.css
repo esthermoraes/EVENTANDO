@@ -42,19 +42,26 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     top: 15px;
     left: 40px;
     height: 10%;
-    width: 10%;
+    width: 15%;
+    background-color: #f2e9f4;
+    border-bottom: 3px solid #770089;
+    border-top:#f2e9f4;
+    border-left: #f2e9f4;
+    border-right: #f2e9f4;
+    border-radius: 0px;
+    font-size: 20;
+    align-items: center;
+}
+
+#cadastro{
+    color:#333333;
+    top: 15px;
+    left: 170px;
+    height: 10%;
+    width: 15%;
     background-color: #f2e9f4;
     border: 0px;
     font-size: 20;
-}
-
-hr{
-    size: 1;
-    width: 14%;
-    position: relative;
-    left: -2.5px;
-    top: -230px;
-    border-color: #770089;
 }
 
 /* Definindo a estilização do elemento com ID "formulario"*/
@@ -149,14 +156,14 @@ hr{
 button{
     cursor: pointer;
     position: absolute;
-    top: 300px;
+    top: 290px;
     left: 55px;
-    border: solid 2px;
+    border: solid 3px;
     border-radius: 8px;
     border-color: #ffffff;
     background-color: #770089;
     text-align: center;
-    height: 30px;
+    height: 40px;
     width: 550px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -168,20 +175,127 @@ button{
 #recuperacao{
     position: relative;
     color: black;
-    top: 470px;
-    left: 845px;
+    top: -17px;
+    left: 390px;
     font-size: 12px;
     font-weight: bold;
 }
 
-/* Definindo a estilização do elemento com ID "cadastrar"*/
-#cadastrar{
+#divCadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    color: #b25abf;
-    top: 535px;
-    left: 710px;
-    font-size: 14px;
-    font-weight: bold;
+    background-color: #f2e9f4;
+    /*border: 2px solid #86b9d7;*/
+    border-radius: 9px;
+    width: 35%;
+    height: 65%;
+    top: 10%;
+    left: 55%;
+}
+
+#login2{
+    color:#333333;
+    top: 15px;
+    left: 40px;
+    height: 10%;
+    width: 15%;
+    background-color: #f2e9f4;
+    border: 0px;
+    font-size: 20;
+    align-items: center;
+}
+
+#cadastro2{
+    color:#333333;
+    top: 15px;
+    left: 170px;
+    height: 10%;
+    width: 23%;
+    background-color: #f2e9f4;
+    border-bottom: 3px solid #37008a;
+    border-top:#f2e9f4;
+    border-left: #f2e9f4;
+    border-right: #f2e9f4;
+    border-radius: 0px;
+    font-size: 20;
+}
+
+/* Definindo a estilização do elemento com ID "formulario"*/
+#formulario{
+    position: absolute;
+    top: 100px;
+}
+
+#txtNome{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#txtCpf{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#date{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#telTelefone{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+/* Definindo a estilização do elemento com ID "emEmail"*/
+#emEmail{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+/* Definindo a estilização do elemento com ID "pwdSenha"*/
+#pwdSenha{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#pwdConfSenha{
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    border: #37008a solid 1px;
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+}
+
+#cadastrar{
+    top: 450px; 
+    background-color: #37008a;
 }
 
 /* Definindo a estilização do html scrollbar*/
