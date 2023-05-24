@@ -96,67 +96,16 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     height: 30px;
 }
 
-.conexao {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
+#ckb{
+    margin-left: 2.5rem;
+    height: 10px;
+    width: 10px;
+}
+
+#txt_ckb{
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-.conexao input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-    top: -100px;
-}
-
-#checkmark{
-    position: absolute;
-    top: 5;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-  }
-
-/* When the checkbox is checked, add a blue background */
-.conexao input:checked ~ .checkmark {
-    background-color: #770089;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.conexao input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.conexao .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: #770089 solid 1px;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 
 /* Definindo a estilização do elemento com ID "recuperacao"*/
@@ -198,7 +147,6 @@ button{
     justify-content: center;
     position: relative;
     background-color: #f2e9f4;
-    /*border: 2px solid #86b9d7;*/
     border-radius: 9px;
     width: 35%;
     height: 65%;
@@ -266,7 +214,6 @@ button{
     justify-content: center;
     position: relative;
     background-color: #f2e9f4;
-    /*border: 2px solid #86b9d7;*/
     border-radius: 9px;
     width: 35%;
     height: 65%;
@@ -290,7 +237,7 @@ button{
 #cadastro2{
     color:#333333;
     top: 15px;
-    left: 170px;
+    left: 160px;
     height: 10%;
     width: 23%;
     background-color: #f2e9f4;
