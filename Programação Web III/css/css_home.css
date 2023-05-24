@@ -77,6 +77,11 @@ body{
     cursor: pointer;
 }
 
+#cadastrar:hover{
+    border-color: blue;
+    transition-duration: all 0.4s;
+}
+
 /* Definindo a estilização do elemento com ID "login"*/
 .login{
     width: 5px;

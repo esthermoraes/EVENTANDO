@@ -129,7 +129,7 @@ button{
     top: 290px;
     left: 55px;
     border: solid 3px;
-    border-radius: 8px;
+    border-radius: 20px;
     border-color: #ffffff;
     background-color: #770089;
     text-align: center;
@@ -139,6 +139,13 @@ button{
     font-size: 15px;
     font-weight: bold;
     color: white;
+}
+
+#buttonG {
+    position: absolute;
+    top: 60%;
+    left: 7%;
+    width: 553px;
 }
 
 #divRecuperar{

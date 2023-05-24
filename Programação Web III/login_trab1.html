@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 	<!-- CSS externo-->
     <link rel="stylesheet" type="text/css" href="css/css_login.css"/>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+	<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     <script src = 'js/js_login.js' defer></script>
 	<title> LOGIN </title>
 </head>
 
-<body bgcolor = 'bedef2' onload="exibirpadrao()">
+<body bgcolor = 'bedef2'>
 
 	<div id = "divLogo" name = "divLogo">
 		<img id = logo src = "img/logo_login.png">
@@ -38,6 +40,7 @@
         <a href = "menu_trab1.html"> 
 			<button type = "submit" id="entrar"> ENTRAR </button>
 		</a>
+        <div id="buttonG"></div>
     </div>
 
 	<div id = "divRecuperar" name = "divRecuperar">

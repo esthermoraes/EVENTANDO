@@ -3,7 +3,9 @@
 <head>
 	<meta charset = "utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/css_menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/css_menu.css"/>
+    <script src = 'js/js_menu.js' defer></script>
     <!-- Definimos o título da página -->
 	<title> MENU </title>
 </head>
@@ -11,7 +13,6 @@
 <!-- Definimos a cor da página -->
 <body bgcolor = 'ededed'>
 <!-- Chamamos o arquivo JAVA para colacar as funcinalidades de alguns elementos da página -->
-<script src = 'js/js_menu.js' defer></script>
 <!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
 	<header id = "Cabecalho" name = "Cabecalho">
 		<div id = "divLogoP" name = "divLogoP">
@@ -28,18 +29,17 @@
 		<button id = "CriarEvento" name = "CriarEvento" onclick = "CriarEvento()"> Criar Evento </button>
 
         <div id = "menu_hamburguer">
-			<button id = "btn_menuHamburguer" onclick="mDropDown()" > <img src="img/menu_hamburguer.png"></button>
+			<button class="btn" onclick="mDropDown()" ><i class="fa fa-bars"></i>
             <!-- Definimos quais seriam os elementos presentes no menu DropDown. -->
             <div id = "dropDown" class = "dropDown">
-                <a href = #> Favoritos </a>
-                <a href = #> Sobre Nós </a>
-                <a href = #> Ajuda </a>
+                <a href = #> PERFIL </a>
+                <a href = #> &#9733; FAVORITOS </a>
+                <a href = #> SOBRE NÓS </a>
+                <a href = #> &#63;	AJUDA </a>
+                <a href = #> ENCERRAR SESSÃO </a>
             </div>
         </div>
-		
-        <div id = "perfil">
-			<button id = "btn_perfil" type="button" > <img src="img/perfil.png"></button>
-		</div>
+	
 	</header>	
 
 <!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
