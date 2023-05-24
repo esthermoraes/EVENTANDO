@@ -78,7 +78,7 @@ body{
 }
 
 #cadastrar:hover{
-    border-color: blue;
+    background-color: #b900d5;
     transition-duration: all 0.4s;
 }
 
