@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/css_home.css" />
-	<link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 	<!-- Definimos o título da página -->
 	<title> HOME </title>
 </head>
@@ -16,17 +16,20 @@
 			<img id = logo src = "img/logo.png">
 		</div> <br> <br>
 		<div class="divBuscar">
-            		<input type="text" class="buscar" placeholder="Buscar eventos" required>
-            		<a href="#">
+			<input type="text" class="buscar" placeholder="Buscar eventos" required>
+				<a href="#">
 		    		<img id="lupa" src="img/lupa.png" alt="Lupa">
-			</a>
+				</a>
 		</div>
 		<a href = "login_trab1.html"> 
-		<button id = "cadastrar" name = "cadastrar" onclick = "cadastrar()"> Criar Evento </button>
+		<button type = "submit" id = "criar" name = "criar"> Criar Evento </button>
 		</a> 
 		<div class="login">
 			<a href="login_trab1.html">
-				<button>LOGIN <i class="icon-login"></i></button>
+				<button class="btn">
+					<i class="fa fa-arrow-right-to-bracket"></i> 
+					  LOGIN
+				</button>
 			</a>
 		</header>
 	</div>	
@@ -62,7 +65,7 @@
 		<a href="https://www.instagram.com/eventando.nozes/" target="_blank"><img id="insta" src="img/insta.png" alt="insta">
 		</a>
 		<!-- Ainda na div rodapé, tem uma label sobre nozes, que futuramente será um link para uma página sobre nós -->
-		<label id="sobreN"><u>SOBRE NOZES</u></label>
+		<label id="sobreN"><a href="#" id = "sobreNozes">SOBRE NÓS</a></label>
 		<!-- Ainda na div rodapé, inserimos as imagens do from nozes e depois da playStore juntamente da label -->
 	    <img id="from" src="img/rodape.png" alt="from">
 			<div class="store">
