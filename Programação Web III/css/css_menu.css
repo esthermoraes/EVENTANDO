@@ -61,29 +61,35 @@ body{
 }
     
 /* Definindo a estilização do elemento com ID "CriarEvento"*/
-#CriarEvento{
+#criar{
     position: absolute;
-    top: 30%;
-    left: 82%;
-    border: solid 2px;
+    top: 26%;
+    left: 82.5%;
+    border: solid 3px;
     border-color: #770089;
-    border-radius: 9px;
+    border-radius: 40px;
     background-color:#b25abf;
     text-align: center;
-    height: 25px;
-    width: 150px;
+    height: 33px;
+    width: 170px;
     font-size: 15px;
     color: white;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#criar:hover{
+    background-color: #b900d5;
+    transition-duration: all 0.4s;
 }
      
 /* Definindo a estilização do elemento com ID "menu_hamburguer"*/
 #menu_hamburguer{
-    width: 5px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 14%;
-    left: 91.5%;
+    top: 25%;
+    left: 94%;
     background-color: #bedef2;  
 }
 
@@ -92,8 +98,7 @@ body{
     background-color: #bedef2;
     border: none;
     color: #424242;
-    padding: 12px 16px;
-    font-size: 14px;
+    font-size: 35px;
     cursor: pointer;
 }
 
@@ -109,11 +114,23 @@ body{
 /* Definindo a estilização do elemento com ID "dropDown a"*/
 .dropDown a{
     float: none;
-    color: black;
-    padding: 10px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;;
+    height: 65px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-left: 1px solid #770089;
+    border-right: 1px solid #770089;
+}
+
+#f{
+    height: 50px;
+    border-top: 1px solid white;
+    border-bottom: none;
 }
 
 /* Esta regra define o estilo de fundo de um link dentro do dropdown quando o cursor do mouse é colocado sobre ele (hover). 
@@ -127,15 +144,6 @@ A propriedade display define como o elemento deve ser exibido na página, e bloc
 Quando a classe "show" é adicionada ao dropdown, ele se torna visível na página, já que sua propriedade display é definida como block.*/
 .show{
     display: block;
-}
-    
-/* Definindo a estilização do elemento com ID "btn_perfil"*/
-#btn_perfil{
-    background-color: #bedef2; 
-    border: solid; 
-    border-color: #bedef2;
-    width: 50px;
-    height: 50px;
 }
     
 /* Definindo a estilização do elemento com ID "EventosR*/
@@ -153,7 +161,8 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     margin-top: 20px;
     background-color: #dccce0;
     border-radius: 13px;
-    width: 1750px;
+    /*width: 1750px;*/
+    width: 1810px;
     height: 150px;
     display: flex;
     align-items: center;

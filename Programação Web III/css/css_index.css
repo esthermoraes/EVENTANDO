@@ -71,10 +71,11 @@ body{
     background-color:#b25abf;
     text-align: center;
     height: 33px;
-    width: 150px;
+    width: 160px;
     font-size: 15px;
     color: white;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #criar:hover{
@@ -84,8 +85,8 @@ body{
 
 .btn{
     position: absolute;
-    top: 70%;
-    left: 91%;
+    top: 85%;
+    left: 80%;
     background-color:#bedef2;
     cursor: pointer;
     height: 33px;
@@ -98,7 +99,7 @@ body{
 }
 
 .btn:hover{
-    background-color: #b900d5;
+    color: #b900d5;
     transition-duration: all 0.4s;
 }
 

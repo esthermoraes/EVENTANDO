@@ -6,6 +6,20 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.btn{
+    top: 2%;
+    left: 1%;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    background-color: #bedef2;
+}
 /* Definindo a estilização do elemento com ID "logo"*/
 #logo{
     width: 650px;
@@ -118,8 +132,18 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     font-weight: bold;
 }
 
+#recuperacao:hover{
+    color: #b25abf;
+    transition-duration: all 0.4s;
+}
+
 #entrar{
     left: 7%;
+}
+
+#entrar:hover{
+    background-color: #b900d5;
+    transition-duration: all 0.4s;
 }
 
 /* Definindo a estilização do elemento button*/
@@ -143,8 +167,8 @@ button{
 
 #buttonG {
     position: absolute;
-    top: 60%;
-    left: 7%;
+    top: 61%;
+    left: 30%;
     width: 553px;
 }
 
@@ -213,6 +237,11 @@ button{
     background-color: #770089;
     width: 558px;
     height: 40px; 
+}
+
+#enviar:hover{
+    background-color: #b900d5;
+    transition-duration: all 0.4s;
 }
 
 #divCadastro{
@@ -349,6 +378,11 @@ button{
     background-color: #37008a;
     width: 555px;
     height: 40px;
+}
+
+#cadastrar:hover{
+    background-color: #5d1cc1;
+    transition-duration: all 0.4s;
 }
 
 /* Definindo a estilização do html scrollbar*/
