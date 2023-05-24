@@ -5,7 +5,7 @@
 
 ### 1. COMPONENTES<br>
 Integrantes do grupo:<br>
-Esther Moraes Nascimento - esther.ifes2021@gmail.com<br>
+Esther Moraes Nascimentooo - esther.ifes2021@gmail.com<br>
 Lorena Toraes dos Santos - lorenatoraesdossantos@gmail.com<br>
 Sofia Andrade Nascimento - andradesoso17@gmail.com
 
