@@ -20,6 +20,12 @@ body{
     color: #333333;
     background-color: #bedef2;
 }
+
+.btn:hover{
+    color: #b900d5;
+    transition-duration: all 0.4s;
+}
+
 /* Definindo a estilização do elemento com ID "logo"*/
 #logo{
     width: 650px;
