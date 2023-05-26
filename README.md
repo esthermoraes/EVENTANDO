@@ -62,7 +62,7 @@ b) *Histórias de usuário:* <br>
         id_usuario: campo que armazena um código único relativo a cada usuario.
         nome_usuario: campo referente ao nome do usuário.
         data_nasc: campo referente a data de nascimento do usuário.
-        cidade: campo referente a cidade do usuário.
+        estado : campo referente ao estado  do usuário.
         telefone: campo que armazena o número do usuário.
         email: campo que armazena o email do usuário.
         senha: campo que armazena a autenticação do email.
@@ -134,7 +134,7 @@ b) *Histórias de usuário:* <br>
         id_usuario serial PRIMARY KEY,
         nome_usuario varchar (50),
         data_nasc date,
-        cidade varchar (255),
+        estado  varchar (255),
         telefone varchar (14),
         email varchar (30),
         senha varchar (20)
