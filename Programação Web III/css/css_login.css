@@ -335,15 +335,34 @@ button{
     height: 30px;
 }
 
-#sltEstado{
+.box{
     position: relative;
     left: 7%;
+}
+
+.box select{
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
     border-radius: 8px;
     width: 550px;
     height: 30px;
+}
+
+.box:before{
+    content: '\f13a';
+    font-family: Font Awesome 5 Free;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    background-color: #37008a;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 28px;
+    border-radius: 8px;
 }
 
 #telTelefone{
