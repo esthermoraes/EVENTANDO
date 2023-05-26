@@ -145,6 +145,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
 
 #entrar{
     left: 7%;
+    top: 210px;
 }
 
 #entrar:hover{
@@ -237,9 +238,9 @@ button{
 }
 
 #enviar{
-    top: 270px;
+    top: 110px;
     position: relative;
-    left: 5.5%;
+    left: 7%;
     background-color: #770089;
     width: 558px;
     height: 40px; 
@@ -247,6 +248,20 @@ button{
 
 #enviar:hover{
     background-color: #b900d5;
+    transition-duration: all 0.4s;
+}
+
+#loginR{
+    position: relative;
+    color: black;
+    top: 150px;
+    left: -44%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#loginR:hover{
+    color: #b25abf;
     transition-duration: all 0.4s;
 }
 
@@ -309,7 +324,7 @@ button{
     height: 30px;
 }
 
-#txtCpf{
+#date{
     position: relative;
     left: 7%;
     font-family: 'Montserrat', sans-serif;
@@ -320,7 +335,7 @@ button{
     height: 30px;
 }
 
-#date{
+#sltEstado{
     position: relative;
     left: 7%;
     font-family: 'Montserrat', sans-serif;
