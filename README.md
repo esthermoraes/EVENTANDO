@@ -48,8 +48,8 @@ b) *Histórias de usuário:* <br>
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
 > O sistema Eventando precisa inicialmente dos seguintes relatórios:
-* Relatório que informe o evento mais favoritado: criador do evento, nome do evento e o formato.
-* Relatório que vai informar o público atingido: id e data de nascimento do usuário.
+* Relatório que informe o evento mais favoritado: nome do usuário, nome do evento e o formato.
+* Relatório que vai informar a faixa etária do público atingido: id e data de nascimento do usuário.
 * Relatório que informe o formato de evento mais criado: id e formato do evento.
 * Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
 * Relatório que vai informar o tipo contato mais ofertado nos eventos em ordem crescentes: id e o contato do tipo de contato.
@@ -61,8 +61,8 @@ b) *Histórias de usuário:* <br>
     USUARIO: Tabela que armazena as informações relativas ao usuário.
         id_usuario: campo que armazena um código único relativo a cada usuario.
         nome_usuario: campo referente ao nome do usuário.
-        cpf: campo referente ao CPF do usuário.
         data_nasc: campo referente a data de nascimento do usuário.
+        cidade: campo referente a cidade do usuário.
         telefone: campo que armazena o número do usuário.
         email: campo que armazena o email do usuário.
         senha: campo que armazena a autenticação do email.
@@ -133,8 +133,8 @@ b) *Histórias de usuário:* <br>
     CREATE TABLE USUARIO (
         id_usuario serial PRIMARY KEY,
         nome_usuario varchar (50),
-        cpf varchar (14),
         data_nasc date,
+        cidade varchar (255),
         telefone varchar (14),
         email varchar (30),
         senha varchar (20)
