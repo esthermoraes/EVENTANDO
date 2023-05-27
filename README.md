@@ -331,15 +331,12 @@ b) *Histórias de usuário:* <br>
 ### 11.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
         a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
         (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
+        b) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
 ### 12. PRINCIPAIS CONSULTAS DO SISTEMA<br> 
- Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
- <br>
-  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
- <br>
+ Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template. <br>
+  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios. <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.
 
  ### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES<br>
@@ -354,7 +351,7 @@ b) *Histórias de usuário:* <br>
  #### 14.2. APRESENTAÇÃO EM VÍDEO
 
 <br>
-
+---------------------------------------------------------------------------------------------------------
 ##### About Formatting
     https://help.github.com/articles/about-writing-and-formatting-on-github/
     
