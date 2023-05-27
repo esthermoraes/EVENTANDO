@@ -351,20 +351,18 @@ b) *Histórias de usuário:* <br>
  #### 14.2. APRESENTAÇÃO EM VÍDEO
 
 <br>
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 <br>
 ##### About Formatting
     https://help.github.com/articles/about-writing-and-formatting-on-github/
     
 ##### Basic Formatting in Git
-    
     https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
    
-    
 ##### Working with advanced formatting
     https://help.github.com/articles/working-with-advanced-formatting/
 
-#### Mastering Markdown
+##### Mastering Markdown
     https://guides.github.com/features/mastering-markdown/
 
 ### OBSERVAÇÕES IMPORTANTES
@@ -376,11 +374,8 @@ b) *Histórias de usuário:* <br>
 
 #### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
 
-
 Link para BrModelo:<br>
-http://sis4.com/brModelo/brModelo/download.html
-<br>
+http://sis4.com/brModelo/brModelo/download.html <br>
 
-
-Link para curso de GIT<br>
+Link para curso de GIT:<br>
 ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
