@@ -326,63 +326,55 @@ b) *Histórias de usuário:* <br>
         FOREIGN KEY (FK_EVENTO_id_evento)
         REFERENCES EVENTO (id_evento)
         ON DELETE SET NULL;
-
                
 ### 11.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
-        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico
-        (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
-        b) Criar um novo banco de dados para testar a restauracao 
-        (em caso de falha na restauração o grupo não pontuará neste quesito)
+        a) inclusão das instruções de inserção dos dados nas tabelas criadas pelo script de modelo físico (Drop para exclusão de tabelas + create definição de para tabelas e estruturas de dados + insert para dados a serem inseridos)
+        b) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito)
         c) formato .SQL
 
 ### 12. PRINCIPAIS CONSULTAS DO SISTEMA<br> 
- Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template.
- <br>
-  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios.
- <br>
+ Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template. <br>
+  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios. <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.
 
  ### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES<br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
+     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
  #### 13.1.	INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
  #### 13.2.	DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
  #### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
  
  ### 14. SLIDES E APRESENTAÇÃO EM VÍDEO<br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.<br>
+     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
  #### 14.1. SLIDES<br>
  #### 14.2. APRESENTAÇÃO EM VÍDEO
 
+<br>
+--------------------------------------------------------------------------------------------------------------------------------
 <br>
 
 ##### About Formatting
     https://help.github.com/articles/about-writing-and-formatting-on-github/
     
 ##### Basic Formatting in Git
-    
     https://help.github.com/articles/basic-writing-and-formatting-syntax/#referencing-issues-and-pull-requests
    
-    
 ##### Working with advanced formatting
     https://help.github.com/articles/working-with-advanced-formatting/
 
-#### Mastering Markdown
+##### Mastering Markdown
     https://guides.github.com/features/mastering-markdown/
 
 ### OBSERVAÇÕES IMPORTANTES
 
 #### Todos os arquivos que fazem parte do projeto (Imagens, pdfs, arquivos fonte, etc..), devem estar presentes no GIT. Os arquivos do projeto vigente não devem ser armazenados em quaisquer outras plataformas.
-1. Caso existam arquivos com conteúdos sigilosos, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
+- Caso existam arquivos com conteúdos sigilosos, comunicar o professor que definirá em conjunto com o grupo a melhor forma de armazenamento do arquivo.
 
 #### Todos os grupos deverão fazer Fork deste repositório e dar permissões administrativas ao usuário deste GIT, para acompanhamento do trabalho.
 
 #### Os usuários criados no GIT devem possuir o nome de identificação do aluno (não serão aceitos nomes como Eu123, meuprojeto, pro456, etc). Em caso de dúvida comunicar o professor.
 
-
 Link para BrModelo:<br>
-http://sis4.com/brModelo/brModelo/download.html
-<br>
+http://sis4.com/brModelo/brModelo/download.html <br>
 
-
-Link para curso de GIT<br>
+Link para curso de GIT:<br>
 ![https://www.youtube.com/curso_git](https://www.youtube.com/playlist?list=PLo7sFyCeiGUdIyEmHdfbuD2eR4XPDqnN2?raw=true "Title")
