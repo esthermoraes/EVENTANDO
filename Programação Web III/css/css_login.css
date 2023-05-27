@@ -86,6 +86,10 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     text-align: center;
 }
 
+#cadastro:hover{
+    color:#37008a;
+}
+
 /* Definindo a estilização do elemento com ID "formulario"*/
 #formulario{
     position: absolute;
@@ -291,6 +295,11 @@ button{
     text-align: center;
 }
 
+
+#login2:hover{
+    color:#770089;
+}
+
 #cadastro2{
     color:#333333;
     top: 15px;
@@ -335,34 +344,15 @@ button{
     height: 30px;
 }
 
-.box{
-    position: relative;
-    left: 7%;
-}
-
-.box select{
+#sltEstado{
     font-family: 'Montserrat', sans-serif;
     color: #333333;
     border: #37008a solid 1px;
     border-radius: 8px;
     width: 550px;
     height: 30px;
-}
-
-.box:before{
-    content: '\f13a';
-    font-family: Font Awesome 5 Free;
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 50px;
-    height: 30px;
-    background-color: #37008a;
-    color: white;
-    text-align: center;
-    line-height: 30px;
-    font-size: 28px;
-    border-radius: 8px;
+    position: relative;
+    left: 7%;
 }
 
 #telTelefone{
