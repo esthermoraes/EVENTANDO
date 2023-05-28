@@ -17,7 +17,7 @@ CREATE TABLE EVENTO_PRESENCIAL (
 );
 
 CREATE TABLE EVENTO_ONLINE (
-    link varchar (150),
+    link varchar (500),
     FK_plataforma_id_plataforma integer,
     FK_EVENTO_id_evento integer PRIMARY KEY
 );
