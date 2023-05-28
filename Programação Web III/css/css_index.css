@@ -10,7 +10,7 @@ body{
 #Cabecalho{
     position: relative;
     background-color: #bedef2;
-    width: 1890px;
+    width: 1910px;
     height: 80px;
     top: -7px;
 }
@@ -153,6 +153,11 @@ body{
     cursor: pointer;
 }
 
+.evento:hover{
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
+}
+
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
     height: 14px;
@@ -214,10 +219,18 @@ html ::-webkit-scrollbar-track {
 /* Definindo a estilização do elemento com ID "insta"*/
 #insta{
     position: relative;
-    top: 88.5%;
-    width: 25px;
-    height: 25px;
-    left: 3.5%;
+    top: 88.1%;
+    left: 3.7%;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+#insta:hover{
+    color: #b900d5;
+    transition-duration: all 0.4s;
 }
 
 /* Definindo a estilização do elemento com ID "sobreN"*/

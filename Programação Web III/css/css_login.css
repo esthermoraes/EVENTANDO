@@ -55,7 +55,7 @@ ao seu elemento pai. O layout flexível é usado para centralizar os elementos f
     height: 65%;
     top: 10%;
     left: 55%;
-    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
+    box-shadow: 16px 16px rgb(126, 126, 126, 0.13);
 }
 
 #login{
@@ -194,7 +194,7 @@ button{
     height: 65%;
     top: 10%;
     left: 55%;
-    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
+    box-shadow: 16px 16px rgb(126, 126, 126, 0.13);
 }
 
 #rec_senha{
@@ -255,6 +255,7 @@ button{
     transition-duration: all 0.4s;
 }
 
+/*
 #loginR{
     position: relative;
     color: black;
@@ -266,6 +267,27 @@ button{
 
 #loginR:hover{
     color: #b25abf;
+    transition-duration: all 0.4s;
+}
+*/
+
+.loginR{
+    position: absolute;
+    color: black;
+    background-color: #f2e9f4;
+    top: 750%;
+    left: 600%;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 120px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loginR:hover{
+    color: #b900d5;
     transition-duration: all 0.4s;
 }
 
@@ -280,7 +302,7 @@ button{
     height: 65%;
     top: 10%;
     left: 55%;
-    box-shadow: -16px -16px rgb(126, 126, 126, 0.13);
+    box-shadow: 16px 16px rgb(126, 126, 126, 0.13);
 }
 
 #login2{

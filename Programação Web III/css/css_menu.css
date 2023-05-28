@@ -10,7 +10,7 @@ body{
 #Cabecalho{
     position: relative;
     background-color: #bedef2;
-    width: 1900px;
+    width: 1910px;
     height: 80px;
     top: -7px;
 }
@@ -78,10 +78,10 @@ body{
     font-family: 'Montserrat', sans-serif; 
 }
 
-#criar:hover{
+/*#criar:hover{
     background-color: #b900d5;
     transition-duration: all 0.4s;
-}
+}*/
      
 /* Definindo a estilização do elemento com ID "menu_hamburguer"*/
 #menu_hamburguer{
@@ -127,7 +127,7 @@ body{
     border-right: 1px solid #770089;
 }
 
-#f{
+#e{
     border-top: 1px solid white;
     border-bottom: none;
 }
@@ -178,6 +178,11 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     border-color: #770089;
     cursor: pointer;
 }
+
+.evento:hover{
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
+}
          
 /* Definindo a estilização do elemento com ID "MyEventos"*/
 #MyEventos{
@@ -211,6 +216,11 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     cursor: pointer;
     position: relative;
     top: 50px;
+}
+
+.evento2:hover{
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
 }
      
 /* Definindo a estilização do elemento com ID "favorito14*/
@@ -325,6 +335,11 @@ Quando a classe "show" é adicionada ao dropdown, ele se torna visível na pági
     position: relative;
     top: 200px;
     left: -943px
+}
+
+.evento2_2:hover{
+    border: 6px solid #770089;
+    transition-duration: all 0.4s;
 }
 
 /* Definindo a estilização do elemento com ID "EventosM" */

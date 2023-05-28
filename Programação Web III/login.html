@@ -1,3 +1,4 @@
+<!-- Aqui iniciamos o código html, e já chamamos o arquivo css para estilizar -->
 <html>
 <head>
 	<meta charset="utf-8">
@@ -62,7 +63,11 @@
             <input type = "email" id = "emEmail3" placeholder = "Email" required> 
             <br>
 
-            <a href = "#" id = "loginR"  onclick = "exibirLogin()"> LOGIN </a>
+            <!--<a href = "#" id = "loginR"  onclick = "exibirLogin()"> LOGIN </a>-->
+            <button class="loginR" onclick = "exibirLogin()">
+                <i class="fa-solid fa-circle-left"></i> 
+                &nbsp;LOGIN
+            </button>
         </form> 
 
         <!-- botão "ENVIAR" que futuramente terá a funcionalidade de enviar um código de verificação para poder trocar a senha, quando clicado -->
