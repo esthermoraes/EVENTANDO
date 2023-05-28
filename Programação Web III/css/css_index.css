@@ -153,10 +153,10 @@ body{
     cursor: pointer;
 }
 
-.evento:hover{
+/*.evento:hover{
     border: 6px solid #770089;
     transition-duration: all 0.4s;
-}
+}*/
 
 /* Definindo a estilização do html scrollbar*/
 html ::-webkit-scrollbar {
