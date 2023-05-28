@@ -38,6 +38,8 @@ b) *Histórias de usuário:* <br>
 ![HU](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario1.png?raw=true "História de usuário 1")
 ![HU](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario2.png?raw=true "História de usuário 2")
 ![HU](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario3.png?raw=true "História de usuário 3")
+![HU](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario4.png?raw=true "História de usuário 4")
+![HU](https://github.com/esthermoraes/Eventando/blob/main/Projeto%20Integrador/hist_usuario5.png?raw=true "História de usuário 5")
 
 ### 5. PROTÓTIPOS DO SISTEMA<br>
 
