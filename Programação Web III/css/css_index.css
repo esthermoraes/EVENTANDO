@@ -30,7 +30,7 @@ body{
     left: 0px;
 }
 
-/* Definindo a estilização do elemento com ID "divBuscar*/
+/* Definindo a estilização do elemento com a class "divBuscar*/
 .divBuscar{
     position:absolute;
     top:25%;
@@ -50,7 +50,7 @@ body{
     left:97%;
 }
 
-/* Definindo a estilização do elemento com ID "buscar"*/
+/* Definindo a estilização do elemento com a class "buscar"*/
 .buscar{
     width: 1150px;
     background-color: #ededed;
@@ -60,7 +60,7 @@ body{
     border-radius: 40px;
 }
 
-/* Definindo a estilização do elemento com ID "cadastrar"*/
+/* Definindo a estilização do elemento com ID "criar"*/
 #criar{
     position: absolute;
     top: 26%;
@@ -79,10 +79,11 @@ body{
 }
 
 #criar:hover{
-    background-color: #b900d5;
+    background-color: #b900d5; 
     transition-duration: all 0.4s;
 }
 
+/* Definindo a estilização do elemento com a class "btn"*/
 .btn{
     position: absolute;
     top: 85%;
@@ -103,7 +104,7 @@ body{
     transition-duration: all 0.4s;
 }
 
-/* Definindo a estilização do elemento com ID "login"*/
+/* Definindo a estilização do elemento com a class "login"*/
 .login{
     width: 5px;
     height: 20px;
@@ -120,7 +121,7 @@ body{
     width:150px ;
 }
 
-/* Definindo a estilização do elemento com ID "EventosR"*/
+/* Definindo a estilização do elemento com a class "EventosR"*/
 .EventosR{
     font-weight: bold;
     font-size: 25px;
@@ -129,7 +130,7 @@ body{
     left: 3.8%;
 }
 
-/* Definindo a estilização do elemento com ID "barraE"*/
+/* Definindo a estilização do elemento com a class "barraE"*/
 .barraE{
     margin-top: 20px;
     background-color: #dccce0;
@@ -142,7 +143,7 @@ body{
     overflow:auto; 
 }
 
-/* Definindo a estilização do elemento com ID "evento"*/
+/* Definindo a estilização do elemento com a class "evento"*/
 .evento{
     width: 150px;
     height: 100px;
@@ -241,6 +242,7 @@ html ::-webkit-scrollbar-track {
     left: 4%;
 }
 
+/* Definindo a estilização do elemento com ID "sobreNozes"*/
 #sobreNozes{
     color: black;
     font-weight: bold;

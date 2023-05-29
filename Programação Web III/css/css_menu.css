@@ -134,6 +134,10 @@ body{
 
 /* Esta regra define o estilo de fundo de um link dentro do dropdown quando o cursor do mouse é colocado sobre ele (hover). 
 Nesse caso, o fundo é definido como uma cor azul clara (#bedef2)."*/
+#e:hover{ 
+    background-color: rgb(255, 0, 0);
+}
+
 .dropDown a:hover{ 
     background-color: #6d007d;
 }

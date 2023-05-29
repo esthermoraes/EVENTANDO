@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Definição a escala da página para se adequar ao tamanho da tela do dispositivo -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 	<!-- CSS externo-->
     <link rel="stylesheet" type="text/css" href="css/css_login.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- JS externo-->
     <script src = 'js/js_login.js' defer></script>
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 	<script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
@@ -15,7 +16,6 @@
 </head>
 
 <body bgcolor = 'bedef2'>
-
     <a href="index.html">
         <button class="btn">
             <i class="fa-solid fa-circle-left"></i> 
@@ -46,7 +46,7 @@
 			<a href = "#" id = "recuperacao"  onclick = "exibirRecuperar()"> ESQUECI MINHA SENHA? </a>
         </form>
 
-        <!-- botão "ENTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
+        <!-- botão "ENTRAR" que redireciona para uma página "menu.html" quando clicado -->
         <a href = "menu.html"> 
                 <button type = "submit" id="entrar"> ENTRAR </button>
         </a>
@@ -55,7 +55,7 @@
 
 	<div id = "divRecuperar" name = "divRecuperar">
         <label id="rec_senha"> RECUPERAÇÃO DE SENHA </label>
-            <!-- Formulário RECUPERAÇÃO DE SENHA, com um campos de entrada para o email-->
+            <!-- Formulário RECUPERAÇÃO DE SENHA, com um campo de entrada para o email-->
             <form id = "formulario2">
 			<label id = "txt_rec"> Para recuperarmos sua senha, informe seu endereço de e-mail. </label> 
 			<br> <br>
@@ -74,14 +74,13 @@
         <a href = "login.html"> 
             <button type = "submit" id="enviar"> ENVIAR </button> 
         </a>
-
     </div>
 
 	<div id = "divCadastro" name = "divCadastro">
 		<button id="login2" onclick = "exibirLogin()"> LOGIN </button>
 		<button id="cadastro2" onclick = "exibirCadastro()"> CADASTRO </button>
 
-        <!-- Formulário CADADTRO, com sete campos de entrada, para nome, CPF, data de nascimento, telefone, email, senha e confirmação de senha -->
+        <!-- Formulário CADADTRO, com sete campos de entrada, para nome, data de nascimento, estado, telefone, email, senha e confirmação de senha -->
         <form id = "formulario3">
 			<input type = "text" id = "txtNome" placeholder = "Nome" required> 
             <br> <br>
@@ -134,7 +133,7 @@
             <br> <br>
         </form> 
         
-        <!-- botão "CADASTRAR" que redireciona para uma página "menu_trab1.html" quando clicado -->
+        <!-- botão "CADASTRAR" que redireciona para uma página "menu.html" quando clicado -->
         <a href = "menu.html"> 
             <button type = "submit" id="cadastrar"> CADASTRAR </button>
         </a>

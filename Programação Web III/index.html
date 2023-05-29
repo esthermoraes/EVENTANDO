@@ -8,22 +8,26 @@
 	<!-- Definimos o título da página -->
 	<title> HOME </title>
 </head>
+
 <!-- Definimos a cor da página -->
 <body bgcolor = 'ededed'>
-	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de bucar, o botão de se cadastrar e o de logar. -->
+	<!-- Criamos a divMenu que dentro dela tem a logo, a barra de buscar, o botão de se criar evento e o de logar. -->
 	<header class = "container" id = "Cabecalho" name = "Cabecalho">
 		<div id = "divLogoP" name = "divLogoP">
 			<img id = logo src = "img/logo.png">
 		</div> <br> <br>
+
 		<div class="divBuscar">
 			<input type="text" class="buscar" placeholder="Buscar eventos" required>
 				<a href="#">
 		    		<img id="lupa" src="img/lupa.png" alt="Lupa">
 				</a>
 		</div>
+
 		<a href = "login.html"> 
 		<button type = "submit" id = "criar" name = "criar"> Criar Evento </button>
 		</a> 
+
 		<div class="login">
 			<a href="login.html">
 				<button class="btn">
@@ -31,8 +35,9 @@
 					&nbsp;LOGIN
 				</button>
 			</a>
-		</header>
-	</div>	
+		</div>
+	</header>
+
 		<!-- Criamos uma div, onde nela vamos ter uma outra div onde tem as imagens de vários eventos -->
 		<div class="EventosR">
 			<label>EVENTOS RECENTES</label>
@@ -51,23 +56,27 @@
 				<img class="evento" src="img/evento12.jfif" alt="evento12">
 				<img class="evento" src="img/evento13.jfif" alt="evento13">
 			</div>
-		</div>	
-			<!-- Criamos uma div, onde colocamos na label o slogan e um pouco sonbre o site -->
+		</div>
+
+		<!-- Criamos uma div, onde colocamos na label o slogan e um pouco sonbre o site -->
 		<div class="Slogan">
 			<label id="slogan">CRIE AGORA<br>O SEU<br>EVENTO &rarr;</label>
 			<label id="sobre">Organize seus eventos de maneira prática!<br>Essa ferramenta te ajuda a PLANEJAR, <br>GERENCIAR e EXECUTAR seus eventos <br>PRESENCIAIS ou VIRTUAIS.</label>
 		</div>
+
 		<!-- adicionamos uma imagem "estética" -->
 		<img id="fotosIniciais" src="img/fotosIniciais.png" alt="fotosIniciais">
 		
-		<!-- Criamos a div rodapé, que contém a imagem do instagram que ao clicar é direcionado para uma nova aba com o instagram -->
+		<!-- Criamos a div rodapé, que contém o icon do instagram que ao clicar é direcionado para uma nova aba com o instagram -->
 		<div class="rodape"></div>
 		<a href="https://www.instagram.com/eventando.nozes/" target="_blank">
 			<i id="insta" class="fa-brands fa-instagram"></i>
 			<!--<img id="insta" src="img/insta.png" alt="insta">-->
 		</a>
+
 		<!-- Ainda na div rodapé, tem uma label sobre nozes, que futuramente será um link para uma página sobre nós -->
 		<label id="sobreN"><a href="#" id = "sobreNozes">SOBRE NÓS</a></label>
+
 		<!-- Ainda na div rodapé, inserimos as imagens do from nozes e depois da playStore juntamente da label -->
 	    <img id="from" src="img/rodape.png" alt="from">
 			<div class="store">
