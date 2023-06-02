@@ -127,7 +127,8 @@ b) *Histórias de usuário:* <br>
         b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).
            (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
 
-># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8<br>
+<br>
+># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8
 <br>
 
 ### 9.	MODELO LÓGICO<br>
