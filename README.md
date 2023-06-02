@@ -129,6 +129,7 @@ b) *Histórias de usuário:* <br>
 <br>
 
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8
+<br>
 
 ### 9.	MODELO LÓGICO<br>
 ![ML](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloLogico.png?raw=true "Modelo Lógico")
