@@ -126,8 +126,8 @@ b) *Histórias de usuário:* <br>
         a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
         b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).
            (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
-
 <br>
+
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8
 <br>
 
