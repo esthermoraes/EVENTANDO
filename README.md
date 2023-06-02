@@ -125,7 +125,10 @@ b) *Histórias de usuário:* <br>
 ### 8.	RASTREABILIDADE DOS ARTEFATOS<br>
         a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
         b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).
-        (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
+           (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
+
+># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8<br>
+<br>
 
 ### 9.	MODELO LÓGICO<br>
 ![ML](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloLogico.png?raw=true "Modelo Lógico")
