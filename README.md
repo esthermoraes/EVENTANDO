@@ -47,16 +47,17 @@ b) *Histórias de usuário:* <br>
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/64148ae705d723265691b701/design/s12249_12980.html
 
 #### 5.2. PROTÓTIPO DO SISTEMA WEB<br>
-*Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html <br>
+*Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html 
+<br>
 *Link do site:* <br> https://eventando.rf.gd/
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
 > O sistema Eventando precisa inicialmente dos seguintes relatórios:
-* Relatório que informe o evento mais favoritado: nome do usuário, nome do evento e o formato.
+* Relatório que informe os eventos mais favoritados: id do usuário, nome do evento e o formato.
 * Relatório que vai informar a faixa etária do público atingido: id e data de nascimento do usuário.
 * Relatório que informe o formato de evento mais criado: id e formato do evento.
 * Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
-* Relatório que vai informar o tipo contato mais ofertado nos eventos em ordem crescentes: id e o contato do tipo de contato.
+* Relatório que vai informar os tipos de contato mais ofertado nos eventos em ordem crescente: id e o tipo de contato.
  
  ### 6. MODELO CONCEITUAL<br>
 ![MC](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloConceitual.png?raw=true "Modelo Conceitual")
