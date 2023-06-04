@@ -125,9 +125,7 @@ b) *Histórias de usuário:* <br>
         email_convidado: campo que armazena o email do convdado.
 
 ### 8.	RASTREABILIDADE DOS ARTEFATOS<br>
-        a) Historia de usuários vs protótipo (Histórias de Usuário e em qual tela do protótipo aquela HU está sendo realizada).
-        b) Protótipo vs Modelo conceitual (Histórias de Usuário e em quais tabelas aquele dado está sendo registrado).
-           (modelos devem obrigatoriamente estar em conformidade de rastreabilidade)
+        a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYzRO3YA_c/edit?usp=sharing
 <br>
 
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8
