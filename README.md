@@ -126,7 +126,6 @@ b) *Histórias de usuário:* <br>
 
 ### 8.	RASTREABILIDADE DOS ARTEFATOS<br>
 a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYzRO3YA_c/edit?usp=sharing
-<br>
 
 ># MARCO DA ENTREGA 01: DO ITEM 1 AO ITEM 8
 <br>
@@ -541,16 +540,21 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
   a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios. <br>
   b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.
 
- ### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES<br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
- #### 13.1.	INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
- #### 13.2.	DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
- #### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
+### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES<br>
+    OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
+#### 13.1.	INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
+#### 13.2.	DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
+#### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
+
+># MARCO DA ENTREGA 02: DO ITEM 1 AO ITEM 13
+<br>
  
- ### 14. SLIDES E APRESENTAÇÃO EM VÍDEO<br>
-     OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
- #### 14.1. SLIDES<br>
- #### 14.2. APRESENTAÇÃO EM VÍDEO
+### 14. SLIDES E APRESENTAÇÃO EM VÍDEO<br>
+    OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
+#### 14.1. SLIDES<br>
+#### 14.2. APRESENTAÇÃO EM VÍDEO
+
+># MARCO DA ENTREGA 03: DO ITEM 1 AO ITEM 14
 
 <br>
 --------------------------------------------------------------------------------------------------------------------------------
