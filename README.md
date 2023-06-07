@@ -58,6 +58,7 @@ b) *Histórias de usuário:* <br>
 * Relatório que informe o formato de evento mais criado: id e formato do evento.
 * Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
 * Relatório que vai informar os tipos de contato mais ofertado nos eventos em ordem crescente: id e o tipo de contato.
+<br>
 *COLAB: https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing*
  
  ### 6. MODELO CONCEITUAL<br>
