@@ -342,7 +342,7 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
                
 ### 11.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
     a) 
-        – drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, PLATAFORMA, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento
+        – drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento
 
         CREATE TABLE USUARIO (
             nome varchar (90),
