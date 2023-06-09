@@ -68,9 +68,6 @@ b) *Histórias de usuário:* <br>
         id_usuario: campo que armazena um código único relativo a cada usuario.
         nome_usuario: campo referente ao nome do usuário.
         data_nasc: campo referente a data de nascimento do usuário.
-        estado : campo referente ao estado  do usuário.
-        telefone: campo que armazena o número do usuário.
-        email: campo que armazena o email do usuário.
         senha: campo que armazena a autenticação do email.
         
     EVENTO: Tabela que armazena as informações relativas ao evento.
