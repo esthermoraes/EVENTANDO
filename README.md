@@ -53,11 +53,11 @@ b) *Histórias de usuário:* <br>
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
 > O sistema Eventando precisa inicialmente dos seguintes relatórios:
-* Relatório que informe os eventos mais favoritados: id do usuário, nome do evento e o formato.
-* Relatório que vai informar a faixa etária do público atingido: id e data de nascimento do usuário.
-* Relatório que informe o formato de evento mais criado: id e formato do evento.
-* Relatório que informe as cores mais utilizadas no convite de forma decrescente: id e cores do convite.
-* Relatório que vai informar os tipos de contato mais ofertado nos eventos em ordem crescente: id e o tipo de contato.
+* Relatório que informe os eventos mais favoritados em ordem decrescente: o nome do evento e a quantidade de vezes que foi favoritado.
+* Relatório que vai informar a faixa etária do público atingido em ordem decrescente: a idade e a quantidade de vezes que aparece.
+* Relatório que informe o formato de evento mais criado: o formato do evento e a quantidade de vezes que aparece.
+* Relatório que informe as cores mais utilizadas no convite em ordem decrescente: a cor e a quantidade de vezes que foi utilizada.
+* Relatório que vai informar os tipos de contato mais ofertado nos eventos: o tipo de contato e a quantidade de vezes que foi ofertado.
 * *COLAB:* https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
  
  ### 6. MODELO CONCEITUAL<br>
@@ -80,7 +80,7 @@ b) *Histórias de usuário:* <br>
         horario: campo referente ao horário do evento.
 
     TIPO_CONTATO: Tabela que armazena as informações relativas ao tipo contato.
-        id_tipo_contato: campo que armazena um código único relativo a cada tipo_contato.
+        id_tipo_contato: campo que armazena um código único relativo a cada tipo contato.
         contato: campo que possui o contato de cada tipo contato.
         descricao: campo que possui a descrição do tipo contato.
 
@@ -89,6 +89,9 @@ b) *Histórias de usuário:* <br>
 
     LOCALIZACAO: Tabela que armazena as informações relativas a localização.
         id_localizacao: campo que armazena um código único relativo a cada localização.
+        cep: campo que possui o cep de cada localização.
+        logradouro: campo que possui o logradouro de cada localização.
+        numero: campo que possui o número de cada localização.
 
     TIPO_LOGRADOURO: Tabela que armazena as informações relativas ao tipo logradouro.
         id_tipo_logradouro: campo que armazena um código único relativo a cada tipo logradouro.
@@ -96,15 +99,15 @@ b) *Histórias de usuário:* <br>
 
     BAIRRO: Tabela que armazena as informações relativas ao bairro.
         id_bairro: campo que armazena um código único relativo a cada bairro.
-        bairro: campo que possui os bairros do bairro.
+        descricao: campo que possui os bairros do bairro.
 
     CIDADE: Tabela que armazena as informações relativas a cidade.
         id_cidade: campo que armazena um código único relativo a cada cidade.
-        cidade: campo que possui as cidades da cidade.
+        descricao: campo que possui as cidades da cidade.
 
     ESTADO: Tabela que armazena as informações relativas ao estado.
         id_estado: campo que armazena um código único relativo a cada estado.
-        estado: campo que possui os estados do estado.
+        descricao: campo que possui os estados do estado.
 
     EVENTO_ONLINE: Tabela que armazena as informações relativas ao evento online.
         plataforma: campo que possui a plataforma do evento online.
