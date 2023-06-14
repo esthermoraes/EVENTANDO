@@ -58,7 +58,6 @@ b) *Histórias de usuário:* <br>
 * Relatório que informe o formato de evento mais criado: o formato do evento e a quantidade de vezes que aparece.
 * Relatório que informe as cores mais utilizadas no convite em ordem decrescente: a cor e a quantidade de vezes que foi utilizada.
 * Relatório que vai informar os tipos de contato mais ofertado nos eventos: o tipo de contato e a quantidade de vezes que foi ofertado.
-* *COLAB:* https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
  
  ### 6. MODELO CONCEITUAL<br>
 ![MC](https://github.com/esthermoraes/Eventando/blob/main/Modelagem%20de%20dados/img_modeloConceitual.png?raw=true "Modelo Conceitual")
@@ -1433,19 +1432,18 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Felipe Neto', 'feneto@example.com', 40),
             ('Bruna Correa', 'brureaa@example.com', 40);
 
-    b) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito)
-    c) formato .SQL
+    b) e c) Criar um novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito) em formato .sql
+  
 
-### 12. PRINCIPAIS CONSULTAS DO SISTEMA<br> 
- Inserir as principais consultas (relativas aos 5 principais relatórios) definidas previamente no iten 3.1 deste template. <br>
-  a) Você deve apresentar as consultas em formato SQL para cad um dos relatórios. <br>
-  b) Além da consulta deve ser apresentada uma imagem com o resultado obtido para cada consulta.
-
-### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES<br>
-    OBS: Observe as instruções relacionadas a cada uma das atividades abaixo.
+### 12. PRINCIPAIS CONSULTAS DO SISTEMA <br> 
+    Principais consultas (relativas aos 5 principais relatórios) definidas previamente no item 3.1 deste template. <br>
+     * *COLAB:* https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
+  
+### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES <br>
 #### 13.1.	INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
 #### 13.2.	DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
 #### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
+    * *COLAB:* https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
 
 ># MARCO DA ENTREGA 02: DO ITEM 1 AO ITEM 13
 <br>
