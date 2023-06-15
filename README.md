@@ -48,8 +48,6 @@ b) *Histórias de usuário:* <br>
 
 #### 5.2. PROTÓTIPO DO SISTEMA WEB<br>
 *Link do protótipo desenvolvido:* <br> https://quant-ux.com/#/apps/643406af57bd5377df475786/design/s10186_20517.html 
-<br>
-*Link do site:* <br> https://eventando.rf.gd/
 
 #### 5.3. QUAIS PERGUNTAS PODEM SER RESPONDIDAS COM OS SISTEMA WEB/MOBILE PROPOSTOS?<br>
 > O sistema Eventando precisa inicialmente dos seguintes relatórios:
