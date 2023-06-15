@@ -1441,15 +1441,15 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ![BD backup](https://github.com/esthermoraes/Eventando/blob/main/Banco%20de%20dados/eventando.sql?raw=true "BD backup")
 
 ### 12. PRINCIPAIS CONSULTAS DO SISTEMA <br> 
-    Principais consultas (relativas aos 5 principais relatórios) definidas previamente no item 3.1 deste template. <br>
-     COLAB: https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
+> Principais consultas (relativas aos 5 principais relatórios) definidas previamente no item 5.3 deste template:
+* COLAB: https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
   
 ### 13. GRÁFICOS, RELATÓRIOS, INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO E OUTRAS SOLICITAÇÕES <br>
 #### 13.1.	INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
 #### 13.2.	DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
 #### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
-    Todo os tópicos se encontram no COLAB: 
-    https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
+Todos os tópicos se encontram no COLAB:<br> 
+https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
 
 ># MARCO DA ENTREGA 02: DO ITEM 1 AO ITEM 13
 <br>
