@@ -1446,7 +1446,7 @@ b) e c) Novo banco de dados para testar a restauração (em caso de falha na res
 #### 13.1. INTEGRAÇÃO COM LINGUAGEM DE PROGRAMAÇÃO<br>
 #### 13.2. DESENVOLVIMENTO DE GRÁFICOS/RELATÓRIOS PERTINENTES, JUNTAMENTE COM DEMAIS<br>
 #### 13.3. OUTRAS SOLICITAÇÕES FEITAS PELO PROFESSOR
-> Todos os tópicos se encontram:
+> Todos os tópicos se encontram no:
 * COLAB: https://colab.research.google.com/drive/1BembJEYM4zWL2QbPSoRckwksGdvLhjTq?usp=sharing
 
 ># MARCO DA ENTREGA 02: DO ITEM 1 AO ITEM 13
