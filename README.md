@@ -81,7 +81,12 @@ b) *Histórias de usuário:* <br>
     TIPO_CONTATO: Tabela que armazena as informações relativas ao tipo contato.
         id_tipo_contato: campo que armazena um código único relativo a cada tipo contato.
         contato: campo que possui o contato de cada tipo contato.
-        descricao: campo que possui a descrição do tipo contato.
+        
+    Tem (Tem_tipo_contato_usuario): Tabela que armazena as informações relativas as tabelas tipo contato e usuario.
+        descricao: campo que possui a descrição do tipo de contato do usuario.
+        
+    Possui (Possui_tipo_contato_usuario): Tabela que armazena as informações relativas as tabelas tipo contato e eveno.
+        descricao: campo que possui a descrição do tipo de contato do evento.
 
     EVENTO_PRESENCIAL:Tabela que armazena as informações relativas ao evento presencial.
         buffet: campo que possui o buffet do evento presencial.
@@ -94,7 +99,7 @@ b) *Histórias de usuário:* <br>
 
     TIPO_LOGRADOURO: Tabela que armazena as informações relativas ao tipo logradouro.
         id_tipo_logradouro: campo que armazena um código único relativo a cada tipo logradouro.
-        tipo_logradouro: campo que possui os tipo de logradouros do tipo logradouro.
+        descricao: campo que possui os tipo de logradouros do tipo logradouro.
 
     BAIRRO: Tabela que armazena as informações relativas ao bairro.
         id_bairro: campo que armazena um código único relativo a cada bairro.
