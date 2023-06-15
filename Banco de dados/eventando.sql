@@ -111,7 +111,7 @@ CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
     descricao varchar(150)
 );
 
-CREATE TABLE Tem (
+CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
     fk_USUARIO_id_usuario int,
     fk_TIPO_CONTATO_id_tipo_contato int,
     descricao varchar (150)
