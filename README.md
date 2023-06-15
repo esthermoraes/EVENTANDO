@@ -1437,8 +1437,8 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Felipe Neto', 'feneto@example.com', 40),
             ('Bruna Correa', 'brureaa@example.com', 40);
 
-    b) e c) Novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito) em formato .sql.
-            ![BD backup](https://github.com/esthermoraes/Eventando/blob/main/Banco%20de%20dados/eventando.sql?raw=true "BD backup")
+b) e c) Novo banco de dados para testar a restauracao (em caso de falha na restauração o grupo não pontuará neste quesito) em formato .sql.
+    ![BD backup](https://github.com/esthermoraes/Eventando/blob/main/Banco%20de%20dados/eventando.sql?raw=true "BD backup")
 
 ### 12. PRINCIPAIS CONSULTAS DO SISTEMA <br> 
 > Principais consultas (relativas aos 5 principais relatórios) definidas previamente no item 5.3 deste template:
