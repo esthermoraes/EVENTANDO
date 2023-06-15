@@ -210,9 +210,7 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
 
         CREATE TABLE TIPO_CONTATO (
             id_tipo_contato serial PRIMARY KEY,
-            contato varchar(50),
-            descricao varchar(150),
-            FK_USUARIO_id_usuario int
+            contato varchar(50)
         );
 
         CREATE TABLE buffet (
@@ -242,9 +240,16 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
 
         CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
             fk_TIPO_CONTATO_id_tipo_contato int,
-            fk_EVENTO_id_evento int
+            fk_EVENTO_id_evento int,
+            descricao varchar(150)
         );
-        
+
+        CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
+            fk_USUARIO_id_usuario int,
+            fk_TIPO_CONTATO_id_tipo_contato int,
+            descricao varchar (150)
+        );
+
         ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
             FOREIGN KEY (FK_ESTADO_id_estado)
             REFERENCES ESTADO (id_estado)
@@ -300,11 +305,6 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             REFERENCES BAIRRO (id_bairro)
             ON DELETE CASCADE;
         
-        ALTER TABLE TIPO_CONTATO ADD CONSTRAINT FK_TIPO_CONTATO_2
-            FOREIGN KEY (FK_USUARIO_id_usuario)
-            REFERENCES USUARIO (id_usuario)
-            ON DELETE RESTRICT;
-        
         ALTER TABLE Favorita ADD CONSTRAINT FK_Favorita_1
             FOREIGN KEY (fk_EVENTO_id_evento)
             REFERENCES EVENTO (id_evento)
@@ -325,7 +325,7 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             REFERENCES CIDADE (id_cidade)
             ON DELETE RESTRICT;
         
-        /*ALTER TABLE Possui ADD CONSTRAINT FK_Possui_3
+        /*ALTER TABLE Possui_bairro_cidade ADD CONSTRAINT FK_Possui_3
             FOREIGN KEY (fk_CIDADE_id_cidade)
             REFERENCES CIDADE (id_cidade)
             ON DELETE RESTRICT;*/
@@ -344,13 +344,23 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             FOREIGN KEY (fk_EVENTO_id_evento)
             REFERENCES EVENTO (id_evento)
             ON DELETE SET NULL;
+        
+        ALTER TABLE Tem_tipo_contato_usuario ADD CONSTRAINT FK_Tem_1
+            FOREIGN KEY (fk_USUARIO_id_usuario)
+            REFERENCES USUARIO (id_usuario)
+            ON DELETE RESTRICT;
+        
+        ALTER TABLE Tem_tipo_contato_usuario ADD CONSTRAINT FK_Tem_2
+            FOREIGN KEY (fk_TIPO_CONTATO_id_tipo_contato)
+            REFERENCES TIPO_CONTATO (id_tipo_contato)
+            ON DELETE SET NULL;
                
 ### 11.	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
     a) 
         -- DELETANDO AS TABELAS
-        – drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento
+        – drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento, Tem _tipo_contato_usuario
 
-        -- CRIAÇÃO DAS TABELAS
+        -- CREATE DAS TABELAS
         CREATE TABLE USUARIO (
             nome varchar (90),
             data_nasc date,
@@ -426,9 +436,7 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
 
         CREATE TABLE TIPO_CONTATO (
             id_tipo_contato serial PRIMARY KEY,
-            contato varchar(50),
-            descricao varchar(150),
-            FK_USUARIO_id_usuario int
+            contato varchar(50)
         );
 
         CREATE TABLE buffet (
@@ -458,10 +466,17 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
 
         CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
             fk_TIPO_CONTATO_id_tipo_contato int,
-            fk_EVENTO_id_evento int
+            fk_EVENTO_id_evento int,
+            descricao varchar(150)
         );
 
-        -- ALTERAÇÃO DAS TABELAS
+        CREATE TABLE TEM_TIPO_CONTATO_USUARIO (
+            fk_USUARIO_id_usuario int,
+            fk_TIPO_CONTATO_id_tipo_contato int,
+            descricao varchar (150)
+        );
+
+        -- ALTER DAS TABELAS
         ALTER TABLE USUARIO ADD CONSTRAINT FK_USUARIO_2
             FOREIGN KEY (FK_ESTADO_id_estado)
             REFERENCES ESTADO (id_estado)
@@ -517,11 +532,6 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             REFERENCES BAIRRO (id_bairro)
             ON DELETE CASCADE;
         
-        ALTER TABLE TIPO_CONTATO ADD CONSTRAINT FK_TIPO_CONTATO_2
-            FOREIGN KEY (FK_USUARIO_id_usuario)
-            REFERENCES USUARIO (id_usuario)
-            ON DELETE RESTRICT;
-        
         ALTER TABLE Favorita ADD CONSTRAINT FK_Favorita_1
             FOREIGN KEY (fk_EVENTO_id_evento)
             REFERENCES EVENTO (id_evento)
@@ -542,7 +552,7 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             REFERENCES CIDADE (id_cidade)
             ON DELETE RESTRICT;
         
-        /*ALTER TABLE Possui ADD CONSTRAINT FK_Possui_3
+        /*ALTER TABLE Possui_bairro_cidade ADD CONSTRAINT FK_Possui_3
             FOREIGN KEY (fk_CIDADE_id_cidade)
             REFERENCES CIDADE (id_cidade)
             ON DELETE RESTRICT;*/
@@ -560,6 +570,16 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
         ALTER TABLE Possui_tipo_contato_evento ADD CONSTRAINT FK_Possui_4
             FOREIGN KEY (fk_EVENTO_id_evento)
             REFERENCES EVENTO (id_evento)
+            ON DELETE SET NULL;
+        
+        ALTER TABLE Tem_tipo_contato_usuario ADD CONSTRAINT FK_Tem_1
+            FOREIGN KEY (fk_USUARIO_id_usuario)
+            REFERENCES USUARIO (id_usuario)
+            ON DELETE RESTRICT;
+        
+        ALTER TABLE Tem_tipo_contato_usuario ADD CONSTRAINT FK_Tem_2
+            FOREIGN KEY (fk_TIPO_CONTATO_id_tipo_contato)
+            REFERENCES TIPO_CONTATO (id_tipo_contato)
             ON DELETE SET NULL;
 
         -- INSERÇÃO DOS DADOS NAS TABELAS
@@ -643,13 +663,57 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Larissa Oliveira', '1989-08-11', 'abc456', 3),
             ('Victor Rodrigues', '1995-03-29', 'senha789', 4),
             ('Carolina Almeida', '1991-10-10', '123abc', 5);
-
+            /*('João Silva', '1990-05-15', 'senha123', 6), 
+                ('Maria Santos', '1985-09-20', 'abcde123', 7), 
+                ('Pedro Almeida', '1992-07-10', 'senha456', 8), 
+                ('Ana Costa', '1998-01-03', 'abc123', 9), 
+                ('Carlos Oliveira', '1987-11-25', 'senha789', 10),
+                ('Mariana Pereira', '1995-04-18', '123456', 11), 
+                ('Fernando Santos', '1991-08-12', 'senha321', 12), 
+                ('Lúcia Rodrigues', '1984-06-27', '654321', 13), 
+                ('Rafaela Mendes', '1997-03-08', 'senha987', 14), 
+                ('Gabriel Alves', '1993-12-01', 'abcxyz', 15),
+                ('Laura Costa', '1990-05-15', 'senha123', 16),
+                ('Gabriel Silva', '1985-09-20', 'abcde123', 17),
+                ('Carolina Almeida', '1992-07-10', 'senha456', 18),
+                ('Lucas Oliveira', '1998-01-03', 'abc123', 19),
+                ('Mariana Santos', '1987-11-25', 'senha789', 20),
+                ('Rafael Pereira', '1995-04-18', '123456', 21),
+                ('Amanda Rodrigues', '1991-08-12', 'senha321', 22),
+                ('Bruno Mendes', '1984-06-27', '654321', 23),
+                ('Isabela Fernandes', '1997-03-08', 'senha987', 24),
+                ('Pedro Alves', '1993-12-01', 'abcxyz', 25),
+                ('Sophia Martins', '1994-02-28', 'senha789', 26),
+                ('Leonardo Rocha', '1988-10-05', 'abc123', 27);*/
+            
         INSERT INTO plataforma (plataforma) VALUES
             ('Google Meet'),
             ('Zoom'),
             ('Microsoft Teams'),
             ('Discord');
+        
+        INSERT INTO buffet (buffet) VALUES
+            ('Buffet A'),
+            ('Buffet B'),
+            ('Buffet C'),
+            ('Buffet D'),
+            ('Buffet E'),
+            ('Buffet F'),
+            ('Buffet G'),
+            ('Buffet H'),
+            ('Buffet I'),
+            ('Buffet J'),
+            ('Buffet K'),
+            ('Buffet L'),
+            ('Buffet M');
 
+        INSERT INTO TIPO_CONTATO (contato) VALUES
+            ('E-mail'),
+            ('Telefone'),
+            ('Facebook'),
+            ('Instagram'),
+            ('Tik Tok');
+                
         INSERT INTO CIDADE (descricao) VALUES 
             ('Rio Branco'),
             ('Maceió'), 
@@ -678,74 +742,6 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('São Paulo'),
             ('Aracaju'), 
             ('Palmas');
-
-        INSERT INTO EVENTO (objetivo, data_prevista, atracoes, privacidade_restrita, horario, nome, FK_USUARIO_id_usuario) VALUES
-            ('Conferência', '2023-06-15', 'Palestrante X, Palestrante Y', TRUE, '09:00', 'Conferência de Tecnologia', 1),
-            ('Casamento', '2023-07-20', 'Cerimônia, Banda Z', FALSE, '17:00', 'Casamento de João e Maria' , 2),
-            ('Workshop', '2023-08-10', 'Oficina de Fotografia', TRUE, '14:00', 'Workshop de Fotografia',  3),
-            ('Festival', '2023-09-05', 'Bandas A, B, C', FALSE, '16:00', 'Festival de Música',  4),
-            ('Confraternização', '2023-10-15', 'Amigo Secreto', TRUE, '19:30', 'Confraternização de Fim de Ano', 5),
-            ('Palestra', '2023-11-20', 'Palestrante D', FALSE, '15:30', 'Palestra de Empreendedorismo',6),
-            ('Feira', '2023-12-10', 'Expositores, Stands', TRUE, '10:00', 'Feira de Negócios', 7),
-            ('Encontro', '2023-06-15', 'Networking', FALSE, '17:00', 'Encontro de Profissionais', 8),
-            ('Formatura', '2023-07-20', 'Cerimônia, Baile', TRUE, '20:00', 'Formatura da Turma X',  9),
-            ('Desfile', '2023-08-10', 'Modelos, Passarela', FALSE, '14:30', 'Desfile de Moda',  10),
-            ('Seminário', '2023-09-05', 'Palestrante E, Palestrante F', TRUE, '09:30', 'Seminário de Marketing',  11),
-            ('Show', '2023-10-15', 'Artista G', FALSE, '21:00', 'Show ao Vivo',12),
-            ('Inauguração', '2023-11-20', 'Cerimônia, Coquetel', TRUE, '18:00', 'Inauguração da Loja',13),
-            ('Concerto', '2023-12-10', 'Orquestra H', FALSE, '20:30', 'Concerto Clássico', 14),
-            ('Convenção', '2023-06-15', 'Palestrante I, Palestrante J', TRUE, '10:00', 'Convenção Empresarial', 15),
-            ('Feijoada', '2023-07-20', 'Samba, Roda de Samba', FALSE, '12:00', 'Feijoada com Samba',16),
-            ('Exposição', '2023-08-10', 'Obras de Arte', TRUE, '15:00', 'Exposição de Arte Contemporânea', 17),
-            ('Congresso', '2023-09-05', 'Palestrante K, Palestrante L', FALSE, '09:00', 'Congresso de Medicina', 18),
-            ('Festa da polenta', '2023-10-15', 'Facilitador M', TRUE, '14:00', 'Festa da polenta', 19),
-            ('Semana Cultural', '2023-11-20', 'Diversas Atrações', FALSE, '16:00', 'Semana Cultural da Cidade',20),
-            ('Simpósio', '2023-12-10', 'Palestrante N, Palestrante O', TRUE, '09:30', 'Simpósio de Ciência', 21),
-            ('Festa do Vinho', '2023-07-20', 'Facilitador Q', TRUE, '14:30', 'Festa do Vinho', 22),
-            ('Festa do morango', '2023-07-20', 'Facilitador Q', TRUE, '14:30', 'Festa do morango', 23),
-            ('Noivado da Lorena', '2023-08-10', 'Palestrante R', FALSE, '18:00', 'Noivado da Lorena',  24),
-            ('Entrega do TCC', '2023-12-13', 'Eventando', TRUE, '21:00', 'Entrega do TCC',  25),
-            ('Apresentação de Produto', '2023-06-15', 'Atração A', FALSE, '15:00', 'Evento Presencial 1', 26),
-            ('Lançamento de Serviço', '2023-07-20', 'Atração B', TRUE, '18:30', 'Evento Presencial 2', 27),
-            ('Conferência de Negócios', '2023-08-10', 'Atração C', FALSE, '11:00', 'Evento Presencial 3', 28),
-            ('Workshop de Capacitação', '2023-09-05', 'Atração D', TRUE, '14:30', 'Evento Presencial 4', 29),
-            ('Palestra Motivacional', '2023-10-15', 'Atração E', FALSE, '16:00', 'Evento Presencial 5', 30),
-            ('Congresso Científico', '2023-11-20', 'Atração F', TRUE, '19:00', 'Evento Presencial 6', 31),
-            ('Seminário de Tecnologia', '2023-12-10', 'Atração G', FALSE, '12:30', 'Evento Presencial 7', 32),
-            ('Feira de Exposição', '2024-01-15', 'Atração H', TRUE, '15:30', 'Evento Presencial 8', 33),
-            ('Encontro de Networking', '2024-02-05', 'Atração I', FALSE, '10:00', 'Evento Presencial 9', 34),
-            ('Convenção de Vendas', '2024-03-20', 'Atração J', TRUE, '13:30', 'Evento Presencial 10', 35),
-            ('Workshop de Marketing', '2024-04-10', 'Atração K', FALSE, '16:30', 'Evento Presencial 11', 36),
-            ('Fórum de Debate', '2024-05-15', 'Atração L', TRUE, '19:30', 'Evento Presencial 12', 37),
-            ('Palestra Educativa', '2024-06-05', 'Atração M', FALSE, '11:30', 'Evento Presencial 13', 38),
-            ('Conferência de Design', '2024-07-10', 'Atração N', TRUE, '14:30', 'Evento Presencial 14', 39),
-            ('Simpósio de Saúde', '2024-08-15', 'Atração O', FALSE, '17:00', 'Evento Presencial 15', 40);
-
-        INSERT INTO EVENTO_ONLINE (link, FK_plataforma_plataforma_PK, FK_EVENTO_id_evento) VALUES
-            ('https://meet.com/evento1', 1, 26),
-            ('https://zoom.com/evento2', 2, 27),
-            ('https://discord.com/evento3', 3, 28),
-            ('https://teams.com/evento4', 4, 29),
-            ('https://meet.com/evento5', 1, 30),
-            ('https://zoom.com/evento6', 2, 31),
-            ('https://discord.com/evento7', 3, 32),
-            ('https://teams.com/evento8', 4, 33),
-            ('https://meet.com/evento9', 1, 34),
-            ('https://zoom.com/evento10', 2, 35),
-            ('https://discord.com/evento11', 3, 36),
-            ('https://teams.com/evento12', 4, 37),
-            ('https://meet.com/evento13', 1, 38),
-            ('https://zoom.com/evento14', 2, 39),
-            ('https://discord.com/evento15', 3, 40);
-
-        INSERT INTO TIPO_LOGRADOURO (descricao) VALUES
-            ('Rodovia'),
-            ('Avenida'),
-            ('Alameda'),
-            ('Praça'),
-            ('Rua'),
-            ('Passarela'),
-            ('Vila');
 
         INSERT INTO BAIRRO (descricao) VALUES
             ('Areial'), 
@@ -830,20 +826,73 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Plano Diretor Norte'), 
             ('Jardim Aureny III');
 
-        INSERT INTO buffet (buffet) VALUES
-            ('Buffet A'),
-            ('Buffet B'),
-            ('Buffet C'),
-            ('Buffet D'),
-            ('Buffet E'),
-            ('Buffet F'),
-            ('Buffet G'),
-            ('Buffet H'),
-            ('Buffet I'),
-            ('Buffet J'),
-            ('Buffet K'),
-            ('Buffet L'),
-            ('Buffet M');
+        INSERT INTO TIPO_LOGRADOURO (descricao) VALUES
+            ('Rodovia'),
+            ('Avenida'),
+            ('Alameda'),
+            ('Praça'),
+            ('Rua'),
+            ('Passarela'),
+            ('Vila');
+
+        INSERT INTO EVENTO (objetivo, data_prevista, atracoes, privacidade_restrita, horario, nome, FK_USUARIO_id_usuario) VALUES
+            ('Conferência', '2023-06-15', 'Palestrante X, Palestrante Y', TRUE, '09:00', 'Conferência de Tecnologia', 25),
+            ('Casamento', '2023-07-20', 'Cerimônia, Banda Z', FALSE, '17:00', 'Casamento de João e Maria' , 2),
+            ('Workshop', '2023-08-10', 'Oficina de Fotografia', TRUE, '14:00', 'Workshop de Fotografia',  3),
+            ('Festival', '2023-09-05', 'Bandas A, B, C', FALSE, '16:00', 'Festival de Música',  4),
+            ('Confraternização', '2023-10-15', 'Amigo Secreto', TRUE, '19:30', 'Confraternização de Fim de Ano', 5),
+            ('Palestra', '2023-11-20', 'Palestrante D', FALSE, '15:30', 'Palestra de Empreendedorismo',6),
+            ('Feira', '2023-12-10', 'Expositores, Stands', TRUE, '10:00', 'Feira de Negócios', 7),
+            ('Encontro', '2023-06-15', 'Networking', FALSE, '17:00', 'Encontro de Profissionais', 8),
+            ('Formatura', '2023-07-20', 'Cerimônia, Baile', TRUE, '20:00', 'Formatura da Turma X',  9),
+            ('Desfile', '2023-08-10', 'Modelos, Passarela', FALSE, '14:30', 'Desfile de Moda',  10),
+            ('Seminário', '2023-09-05', 'Palestrante E, Palestrante F', TRUE, '09:30', 'Seminário de Marketing',  11),
+            ('Show', '2023-10-15', 'Artista G', FALSE, '21:00', 'Show ao Vivo',12),
+            ('Inauguração', '2023-11-20', 'Cerimônia, Coquetel', TRUE, '18:00', 'Inauguração da Loja',13),
+            ('Concerto', '2023-12-10', 'Orquestra H', FALSE, '20:30', 'Concerto Clássico', 14),
+            ('Convenção', '2023-06-15', 'Palestrante I, Palestrante J', TRUE, '10:00', 'Convenção Empresarial', 15),
+            ('Feijoada', '2023-07-20', 'Samba, Roda de Samba', FALSE, '12:00', 'Feijoada com Samba',16),
+            ('Exposição', '2023-08-10', 'Obras de Arte', TRUE, '15:00', 'Exposição de Arte Contemporânea', 17),
+            ('Congresso', '2023-09-05', 'Palestrante K, Palestrante L', FALSE, '09:00', 'Congresso de Medicina', 18),
+            ('Festa da polenta', '2023-10-15', 'Facilitador M', TRUE, '14:00', 'Festa da polenta', 19),
+            ('Semana Cultural', '2023-11-20', 'Diversas Atrações', FALSE, '16:00', 'Semana Cultural da Cidade',20),
+            ('Simpósio', '2023-12-10', 'Palestrante N, Palestrante O', TRUE, '09:30', 'Simpósio de Ciência', 21),
+            ('Festa do Vinho', '2023-07-20', 'Facilitador Q', TRUE, '14:30', 'Festa do Vinho', 22),
+            ('Festa do morango', '2023-07-20', 'Facilitador Q', TRUE, '14:30', 'Festa do morango', 23),
+            ('Noivado da Lorena', '2023-08-10', 'Palestrante R', FALSE, '18:00', 'Noivado da Lorena',  24),
+            ('Entrega do TCC', '2023-12-13', 'Eventando', TRUE, '21:00', 'Entrega do TCC',  1),
+            ('Apresentação de Produto', '2023-06-15', 'Atração A', FALSE, '15:00', 'Evento Presencial 1', 26),
+            ('Lançamento de Serviço', '2023-07-20', 'Atração B', TRUE, '18:30', 'Evento Presencial 2', 27),
+            ('Conferência de Negócios', '2023-08-10', 'Atração C', FALSE, '11:00', 'Evento Presencial 3', 28),
+            ('Workshop de Capacitação', '2023-09-05', 'Atração D', TRUE, '14:30', 'Evento Presencial 4', 29),
+            ('Palestra Motivacional', '2023-10-15', 'Atração E', FALSE, '16:00', 'Evento Presencial 5', 30),
+            ('Congresso Científico', '2023-11-20', 'Atração F', TRUE, '19:00', 'Evento Presencial 6', 31),
+            ('Seminário de Tecnologia', '2023-12-10', 'Atração G', FALSE, '12:30', 'Evento Presencial 7', 32),
+            ('Feira de Exposição', '2024-01-15', 'Atração H', TRUE, '15:30', 'Evento Presencial 8', 33),
+            ('Encontro de Networking', '2024-02-05', 'Atração I', FALSE, '10:00', 'Evento Presencial 9', 34),
+            ('Convenção de Vendas', '2024-03-20', 'Atração J', TRUE, '13:30', 'Evento Presencial 10', 35),
+            ('Workshop de Marketing', '2024-04-10', 'Atração K', FALSE, '16:30', 'Evento Presencial 11', 36),
+            ('Fórum de Debate', '2024-05-15', 'Atração L', TRUE, '19:30', 'Evento Presencial 12', 37),
+            ('Palestra Educativa', '2024-06-05', 'Atração M', FALSE, '11:30', 'Evento Presencial 13', 38),
+            ('Conferência de Design', '2024-07-10', 'Atração N', TRUE, '14:30', 'Evento Presencial 14', 39),
+            ('Simpósio de Saúde', '2024-08-15', 'Atração O', FALSE, '17:00', 'Evento Presencial 15', 40);
+
+        INSERT INTO EVENTO_ONLINE (link, FK_plataforma_plataforma_PK, FK_EVENTO_id_evento) VALUES
+            ('https://meet.com/evento1', 1, 26),
+            ('https://zoom.com/evento2', 2, 27),
+            ('https://discord.com/evento3', 3, 28),
+            ('https://teams.com/evento4', 4, 29),
+            ('https://meet.com/evento5', 1, 30),
+            ('https://zoom.com/evento6', 2, 31),
+            ('https://discord.com/evento7', 3, 32),
+            ('https://teams.com/evento8', 4, 33),
+            ('https://meet.com/evento9', 1, 34),
+            ('https://zoom.com/evento10', 2, 35),
+            ('https://discord.com/evento11', 3, 36),
+            ('https://teams.com/evento12', 4, 37),
+            ('https://meet.com/evento13', 1, 38),
+            ('https://zoom.com/evento14', 2, 39),
+            ('https://discord.com/evento15', 3, 40);
 
         INSERT INTO CONVITE (estilo, cores, FK_EVENTO_id_evento) VALUES
             ('Clássico', 'Branco', 1),
@@ -886,352 +935,6 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Chique', 'Prata', 38),
             ('Abstrato', 'Azul', 39),
             ('Geométrico', 'Amarelo', 40);
-
-        INSERT INTO LOCALIZACAO (numero, logradouro, cep, FK_TIPO_LOGRADOURO_id_tipo_logradouro, FK_BAIRRO_id_bairro) VALUES
-            (1, ' A', '12345-678', 1, 1),
-            (2, ' B', '98765-432', 5, 4),
-            (3, ' C', '54321-876', 3, 7),
-            (4, ' D', '11111-111', 6, 10),
-            (5, ' E', '22222-222', 2, 13),
-            (6, ' F', '33333-333', 3, 16),
-            (7, 'G', '44444-444', 1, 19),
-            (8, ' H', '55555-555', 2, 22),
-            (9, 'I', '66666-666', 3, 25),
-            (10, ' J', '77777-777', 5, 28),
-            (11, ' K', '88888-888', 2, 31),
-            (12, ' L', '99999-999', 3, 34),
-            (13, 'M', '00000-000', 1, 37),
-            (14, ' N', '11111-111', 2, 40),
-            (15, 'O', '22222-222', 6, 43),
-            (16, 'P', '33333-333', 1, 46),
-            (17, ' Q', '44444-444', 4, 49),
-            (18, ' R', '55555-555', 7, 52),
-            (19, ' S', '66666-666', 1, 55),
-            (20, 'T', '77777-777', 2, 58),
-            (21, ' U', '88888-888', 4, 61),
-            (22, 'V', '99999-999', 1, 64),
-            (23, ' W', '10101-101', 6, 67),
-            (24, ' X', '12121-121', 3, 70),
-            (25, 'Y', '13131-131', 7, 73);
-
-        INSERT INTO EVENTO_PRESENCIAL (FK_buffet_buffet_PK, FK_EVENTO_id_evento, FK_LOCALIZACAO_id_localizacao) VALUES 
-            (1, 1, 1),
-            (1, 2, 2),
-            (2, 3, 3),
-            (2, 4, 4),
-            (3, 5, 5),
-            (3, 6, 6),
-            (4, 7, 7),
-            (4, 8, 8),
-            (5, 9, 9),
-            (5, 10, 10),
-            (6, 11, 11),
-            (6, 12, 12),
-            (7, 13, 13),
-            (7, 14, 14),
-            (8, 15, 15),
-            (8, 16, 16),
-            (9, 17, 17),
-            (9, 18, 18),
-            (10, 19, 19),
-            (10, 20, 20),
-            (11, 21, 21),
-            (11, 22, 22),
-            (12, 23, 23),
-            (12, 24, 24),
-            (13, 25, 25);
-
-        INSERT INTO Favorita (fk_EVENTO_id_evento, fk_USUARIO_id_usuario) VALUES
-            (1, 1),
-            (1, 2),
-            (1, 3),
-            (1, 4),
-            (1, 5),
-            (3, 6),
-            (2, 7),
-            (25, 8),
-            (13, 9),
-            (20, 10),
-            (30, 11),
-            (35, 12),
-            (22, 13),
-            (25, 14),
-            (25, 15),
-            (25, 16),
-            (25, 17),
-            (25, 18),
-            (28, 19),
-            (28, 20),
-            (28, 21),
-            (13, 22),
-            (30, 23),
-            (25, 24),
-            (25, 25),
-            (24, 26),
-            (24, 27),
-            (24, 28),
-            (24, 29),
-            (24, 30),
-            (1, 31),
-            (5, 32),
-            (7, 34),
-            (10, 35),
-            (15, 36),
-            (12, 37),
-            (23, 38),
-            (25, 39),
-            (24, 40),
-            (24, 41),
-            (24, 42),
-            (24, 43),
-            (24, 44),
-            (28, 45),
-            (10, 45),
-            (25, 46),
-            (37, 47),
-            (17, 48),
-            (22, 49),
-            (13, 50);
-
-        INSERT INTO TIPO_CONTATO (contato, descricao, FK_USUARIO_id_usuario) VALUES
-            ('E-mail','tiagorosa@gmail.com',1),
-            ('Telefone','(85)99812-4767', 1),
-            ('E-mail','mariasouza@gmail.com',2),
-            ('Telefone','(82)99812-4765', 2),
-            ('E-mail','pedrosantos@gmail.com',3),
-            ('Telefone','(82)99712-4768', 3),
-            ('E-mail','anaoliveira@gmail.com',4),
-            ('Telefone','(92)99212-4767', 4),
-            ('E-mail','carlosrodrigues@gmail.com',5),
-            ('Telefone','(71)99312-4767', 5),
-            ('E-mail','julianacosta@gmail.com',6),
-            ('Telefone','(68)99812-8888', 6),
-            ('E-mail','lucasalmeida@gmail.com',7),
-            ('Telefone','(82)99812-2425',7),
-            ('E-mail','camilasantos@gmail.com',8),
-            ('Telefone','(96)99813-4767', 8),
-            ('E-mail','fernandolima@gmail.com',9),
-            ('Telefone','(92)99502-4767', 9),
-            ('E-mail','amandaferreira@gmail.com',10),
-            ('Telefone','(71)99912-4767', 10),
-            ('E-mail','rodrigosousa@gmail.com',11),
-            ('Telefone','(68)99112-4767', 11),
-            ('E-mail','isabelasilva@gmail.com',12),
-            ('Telefone','(82)99812-4467', 12),
-            ('E-mail','tiagocosta@gmail.com',13),
-            ('Telefone','(96)99812-4755', 13),
-            ('E-mail','leticiaoliveira@gmail.com',14),
-            ('Telefone','(92)9950-4616', 14),
-            ('E-mail','gustavorodrigues@gmail.com',15),
-            ('Telefone','(71)99504-6166', 15),
-            ('E-mail','patriciaalmeida@gmail.com',16),
-            ('Telefone','(68)98181-5344', 16),
-            ('E-mail','rafaelasantos@gmail.com',17),
-            ('Telefone','(82)98157-4947', 17),
-            ('E-mail','diegolima@gmail.com',18),
-            ('Telefone','(96)99657-0589', 18),
-            ('E-mail','renataferreira@gmail.com',19),
-            ('Telefone','(92)98895-5725', 19),
-            ('E-mail','luizsouza@gmail.com',20),
-            ('Telefone','(71)99500-0028', 20),
-            ('E-mail','marianasilva@gmail.com',21),
-            ('Telefone','(68)99744-5347', 21),
-            ('E-mail','marcelocosta@gmail.com',22),
-            ('Telefone','(82)99662-3266', 22),
-            ('E-mail','larissaoliveira@gmail.com',23),
-            ('Telefone','(96)98838-8919', 23),
-            ('E-mail','victorodrigues@gmail.com',24),
-            ('Telefone','(92)99205-1225', 24),
-            ('E-mail','carolinalmeida@gmail.com',25),
-            ('Telefone','(71)99737-6136', 25),
-            ('E-mail','pedroosantos@gmail.com',26),
-            ('Telefone','(68)99895-0028',26),
-            ('E-mail','marisouza@gmail.com',27),
-            ('Telefone','(82)998867-2845', 27),
-            ('E-mail','pedrinhosant@gmail.com',28),
-            ('Telefone','(96)99981-7077', 28),
-            ('E-mail','anaaoliv@gmail.com',29),
-            ('Telefone','(92)99651-7829', 29),
-            ('E-mail','carlinr@gmail.com',30),
-            ('Telefone','(71)99867-7339', 30),
-            ('E-mail','jucost@gmail.com',31),
-            ('Telefone','(68)99291-0382',31),
-            ('E-mail','lumeida@gmail.com',32),
-            ('Telefone','(82)99527-3201', 32),
-            ('E-mail','camsantos@gmail.com',33),
-            ('Telefone','(96)99829-6191', 33),
-            ('E-mail','felima@gmail.com',34),
-            ('Telefone','(92)98142-5937', 34),
-            ('E-mail','mandsferr@gmail.com',35),
-            ('Telefone','(71)99610-7736', 35),
-            ('E-mail','rosousa@gmail.com',36),
-            ('Telefone','(68)99761-1853', 36),
-            ('E-mail','isasilv@gmail.com',37),
-            ('Telefone','(82)99752-5329', 37),
-            ('E-mail','thicosta@gmail.com',38),
-            ('Telefone','(96)98857-9546', 38),
-            ('E-mail','letsoliva@gmail.com',39),
-            ('Telefone','(92)998823-1756', 39),
-            ('E-mail','gudrigues@gmail.com',40),
-            ('Telefone','(71)99986-0303', 40),
-            ('E-mail','patalmeida@gmail.com',41),
-            ('Telefone','(68)98807-0615',41),
-            ('E-mail','rafasant@gmail.com',42),
-            ('Telefone','(82)99890-5887', 42),
-            ('E-mail','didilima@gmail.com',43),
-            ('Telefone','(96)99780-3226',43),
-            ('E-mail','referr@gmail.com',44),
-            ('Telefone','(92)99735-8233', 44),
-            ('E-mail','lusonsa@gmail.com',45),
-            ('Telefone','(71)99768-8723', 45),
-            ('E-mail','masilva@gmail.com',46),
-            ('Telefone','(68)99284-6124', 46),
-            ('E-mail','tiocelin@gmail.com',47),
-            ('Telefone','(82)98895-3905', 47),
-            ('E-mail','lariiol@gmail.com',48),
-            ('Telefone','(96)99291-1708', 48),
-            ('E-mail','vitinro@gmail.com',49),
-            ('Telefone','(92)99856-8854', 49),
-            ('E-mail','carol.almeida@gmail.com',50),
-            ('Telefone','(71)99265-9693', 50),
-            ('Facebook','tecconferencia' ,1),
-            ('Facebook','jemnoivos' ,2),
-            ('Facebook','fotoshop' ,3),
-            ('Facebook','musicfest' ,4),
-            ('Telefone','(27)99223-9636', 5),
-            ('Telefone','(21)99265-5593', 6),
-            ('Telefone','(11)99205-9693', 7),
-            ('Telefone','(84)98525-9493', 8),
-            ('Telefone','(21)99385-9293', 9),
-            ('Telefone','(11)99265-9773', 10),
-            ('E-mail','marketingsem@gmail.com',11),
-            ('E-mail','showaovivo@gmail.com',12),
-            ('E-mail','lojdalore@gmail.com',13),
-            ('E-mail','classiconsert@gmail.com',14),
-            ('E-mail','sambacomfeijao@gmail.com',15),
-            ('E-mail','expoarte@gmail.com',16),
-            ('Instagram','@medcongre' ,17),
-            ('Instagram','@polentafest' ,18),
-            ('Instagram','@citycultura' ,19),
-            ('Instagram','@cienciasimple' ,20),
-            ('Instagram','@vinhofest' ,21),
-            ('Instagram','@morangofest' ,22),
-            ('Instagram','@lewedding' ,23),
-            ('Instagram','@eventando.nozes' ,24),
-            ('Instagram','@eventpresent1' ,25),
-            ('Instagram','@eventpresent2' ,26),
-            ('Instagram','@eventpresent3' ,27),
-            ('Instagram','@eventpresent4' ,28),
-            ('Instagram','@eventpresent5' ,29),
-            ('Instagram','@eventpresent6' ,30),
-            ('Instagram','@eventpresent7' ,31),
-            ('Instagram','@eventpresent8' ,32),
-            ('TikTok','@eventpresent9' ,33),
-            ('TikTok','@eventpresent10' ,34),
-            ('TikTok','@eventpresent11' ,35),
-            ('TikTok','@eventpresent12' ,36),
-            ('TikTok','@eventpresent13' ,37),
-            ('TikTok','@eventpresent14' ,38),
-            ('TikTok','@eventpresent15' ,39),
-            ('TikTok','@eventpresent16' ,40);
-
-        INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
-            (1, 1),
-            (4, 2),
-            (7, 3),
-            (10, 4),
-            (13,5),
-            (16, 6),
-            (19, 7),
-            (22, 8),
-            (25, 9),
-            (28,10),
-            (1, 11),
-            (4, 12),
-            (7, 13),
-            (10, 14),
-            (13,15),
-            (16, 16),
-            (19, 17),
-            (22, 18),
-            (25, 19),
-            (28,20),
-            (31, 21),
-            (34, 22),
-            (37, 23),
-            (40, 24),
-            (43, 25);
-
-        INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
-            (1, 1),
-            (2, 2),
-            (3, 3),
-            (4, 4),
-            (5, 5),
-            (6, 6),
-            (7, 7),
-            (8,8),
-            (9, 9),
-            (10, 10),
-            (11, 11),
-            (12, 12),
-            (13, 13),
-            (14, 14),
-            (15, 15),
-            (16, 16),
-            (17, 17),
-            (18, 18),
-            (19, 19),
-            (20, 20),
-            (21, 21),
-            (22, 22),
-            (23, 23),
-            (24, 24),
-            (25, 25),
-            (26, 26),
-            (27, 27);
-
-        INSERT INTO Possui_tipo_contato_evento  (FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
-            (101, 1),
-            (102, 2),
-            (103, 3),
-            (104, 4),
-            (105, 5),
-            (106, 6),
-            (107, 7),
-            (108, 8),
-            (109, 9),
-            (110, 10),
-            (111, 11),
-            (112, 12),
-            (13, 13),
-            (114, 14),
-            (15, 15),
-            (16, 16),
-            (17, 17),
-            (118, 18),
-            (119, 19),
-            (120, 20),
-            (121, 21),
-            (122, 22),
-            (123, 23),
-            (124, 24),
-            (125, 25),
-            (126, 26),
-            (127, 27),
-            (128, 28),
-            (129, 29),
-            (130, 30),
-            (131, 31),
-            (132, 32),
-            (133, 33),
-            (134, 34),
-            (135, 35),
-            (136, 36),
-            (137, 37),
-            (138, 38),
-            (139, 39),
-            (140, 40);
 
         INSERT INTO LISTA_CONVIDADOS (nome_convidado, email_convidado, FK_CONVITE_id_convite) VALUES
             ('João Silva', 'joao.silva@example.com', 1),
@@ -1434,6 +1137,312 @@ a) e b) https://docs.google.com/document/d/1MtG_edmBN31YLc7Xehc2-jbKlWlcu9_z2oYz
             ('Giovanna Chaves', 'giochav@example.com', 40),
             ('Felipe Neto', 'feneto@example.com', 40),
             ('Bruna Correa', 'brureaa@example.com', 40);
+
+        INSERT INTO LOCALIZACAO (numero, logradouro, cep, FK_TIPO_LOGRADOURO_id_tipo_logradouro, FK_BAIRRO_id_bairro) VALUES
+            (1, ' A', '12345-678', 1, 1),
+            (2, ' B', '98765-432', 5, 4),
+            (3, ' C', '54321-876', 3, 7),
+            (4, ' D', '11111-111', 6, 10),
+            (5, ' E', '22222-222', 2, 13),
+            (6, ' F', '33333-333', 3, 16),
+            (7, 'G', '44444-444', 1, 19),
+            (8, ' H', '55555-555', 2, 22),
+            (9, 'I', '66666-666', 3, 25),
+            (10, ' J', '77777-777', 5, 28),
+            (11, ' K', '88888-888', 2, 31),
+            (12, ' L', '99999-999', 3, 34),
+            (13, 'M', '00000-000', 1, 37),
+            (14, ' N', '11111-111', 2, 40),
+            (15, 'O', '22222-222', 6, 43),
+            (16, 'P', '33333-333', 1, 46),
+            (17, ' Q', '44444-444', 4, 49),
+            (18, ' R', '55555-555', 7, 52),
+            (19, ' S', '66666-666', 1, 55),
+            (20, 'T', '77777-777', 2, 58),
+            (21, ' U', '88888-888', 4, 61),
+            (22, 'V', '99999-999', 1, 64),
+            (23, ' W', '10101-101', 6, 67),
+            (24, ' X', '12121-121', 3, 70),
+            (25, 'Y', '13131-131', 7, 73);
+            
+        INSERT INTO Favorita (fk_EVENTO_id_evento, fk_USUARIO_id_usuario) VALUES
+            (1, 1),
+            (1, 2),
+            (1, 3),
+            (1, 4),
+            (1, 5),
+            (3, 6),
+            (2, 7),
+            (25, 8),
+            (13, 9),
+            (20, 10),
+            (30, 11),
+            (35, 12),
+            (22, 13),
+            (25, 14),
+            (25, 15),
+            (25, 16),
+            (25, 17),
+            (25, 18),
+            (28, 19),
+            (28, 20),
+            (28, 21),
+            (13, 22),
+            (30, 23),
+            (25, 24),
+            (25, 25),
+            (24, 26),
+            (24, 27),
+            (24, 28),
+            (24, 29),
+            (24, 30),
+            (1, 31),
+            (5, 32),
+            (7, 34),
+            (10, 35),
+            (15, 36),
+            (12, 37),
+            (23, 38),
+            (25, 39),
+            (24, 40),
+            (24, 41),
+            (24, 42),
+            (24, 43),
+            (24, 44),
+            (28, 45),
+            (10, 45),
+            (25, 46),
+            (37, 47),
+            (17, 48),
+            (22, 49),
+            (13, 50);
+
+        INSERT INTO EVENTO_PRESENCIAL (FK_buffet_buffet_PK, FK_EVENTO_id_evento, FK_LOCALIZACAO_id_localizacao) VALUES 
+            (1, 1, 1),
+            (1, 2, 2),
+            (2, 3, 3),
+            (2, 4, 4),
+            (3, 5, 5),
+            (3, 6, 6),
+            (4, 7, 7),
+            (4, 8, 8),
+            (5, 9, 9),
+            (5, 10, 10),
+            (6, 11, 11),
+            (6, 12, 12),
+            (7, 13, 13),
+            (7, 14, 14),
+            (8, 15, 15),
+            (8, 16, 16),
+            (9, 17, 17),
+            (9, 18, 18),
+            (10, 19, 19),
+            (10, 20, 20),
+            (11, 21, 21),
+            (11, 22, 22),
+            (12, 23, 23),
+            (12, 24, 24),
+            (13, 25, 25);
+
+        INSERT INTO Possui_bairro_cidade (FK_BAIRRO_id_bairro, FK_CIDADE_id_cidade) VALUES
+            (1, 1),
+            (4, 2),
+            (7, 3),
+            (10, 4),
+            (13,5),
+            (16, 6),
+            (19, 7),
+            (22, 8),
+            (25, 9),
+            (28,10),
+            (1, 11),
+            (4, 12),
+            (7, 13),
+            (10, 14),
+            (13,15),
+            (16, 16),
+            (19, 17),
+            (22, 18),
+            (25, 19),
+            (28,20),
+            (31, 21),
+            (34, 22),
+            (37, 23),
+            (40, 24),
+            (43, 25);
+
+        INSERT INTO Possui_cidade_estado (FK_CIDADE_id_cidade, FK_ESTADO_id_estado) VALUES
+            (1, 1),
+            (2, 2),
+            (3, 3),
+            (4, 4),
+            (5, 5),
+            (6, 6),
+            (7, 7),
+            (8,8),
+            (9, 9),
+            (10, 10),
+            (11, 11),
+            (12, 12),
+            (13, 13),
+            (14, 14),
+            (15, 15),
+            (16, 16),
+            (17, 17),
+            (18, 18),
+            (19, 19),
+            (20, 20),
+            (21, 21),
+            (22, 22),
+            (23, 23),
+            (24, 24),
+            (25, 25),
+            (26, 26),
+            (27, 27);
+
+        INSERT INTO Possui_tipo_contato_evento  (descricao, FK_TIPO_CONTATO_id_tipo_contato, FK_EVENTO_id_evento) VALUES
+            ('tecconferencia' ,3, 1),
+            ('jemnoivos' ,3, 2),
+            ('fotoshop' , 3, 3),
+            ('musicfest' ,3, 4),
+            ('(27)99223-9636', 2, 5),
+            ('(21)99265-5593', 2, 6),
+            ('(11)99205-9693', 2, 7),
+            ('(84)98525-9493', 2, 8),
+            ('(21)99385-9293', 2, 9),
+            ('(11)99265-9773', 2, 10),
+            ('marketingsem@gmail.com',1, 11),
+            ('showaovivo@gmail.com',1, 12),
+            ('lojdalore@gmail.com',1, 13),
+            ('classiconsert@gmail.com',1, 14),
+            ('sambacomfeijao@gmail.com',1, 15),
+            ('expoarte@gmail.com',1, 16),
+            ('@medcongre' ,4 ,17),
+            ('@polentafest',4 ,18),
+            ('@citycultura' ,4 ,19),
+            ('@cienciasimple' ,4 ,20),
+            ('@vinhofest' ,4 ,21),
+            ('@morangofest' ,4 ,22),
+            ('@lewedding' ,4 ,23),
+            ('@eventando.nozes' ,4 ,24),
+            ('@eventpresent1' ,4 ,25),
+            ('@eventpresent2' ,4 ,26),
+            ('@eventpresent3' ,4 ,27),
+            ('@eventpresent4' ,4 ,28),
+            ('@eventpresent5' ,4 ,29),
+            ('@eventpresent6' ,4 ,30),
+            ('@eventpresent7' ,4 ,31),
+            ('@eventpresent8' ,4 ,32),
+            ('@eventpresent9' ,5, 33),
+            ('@eventpresent10' ,5, 34),
+            ('@eventpresent11' ,5, 35),
+            ('@eventpresent12' ,5, 36),
+            ('@eventpresent13' ,5, 37),
+            ('@eventpresent14' ,5, 38),
+            ('@eventpresent15' ,5, 39),
+            ('@eventpresent16' ,5, 40);
+
+        INSERT INTO TEM_TIPO_CONTATO_USUARIO (FK_TIPO_CONTATO_id_tipo_contato, descricao, FK_USUARIO_id_usuario) VALUES
+            (1,'tiagorosa@gmail.com',1),
+            (2,'(85)99812-4767', 1),
+            (1,'mariasouza@gmail.com',2),
+            (2,'(82)99812-4765', 2),
+            (1,'pedrosantos@gmail.com',3),
+            (2,'(82)99712-4768', 3),
+            (1,'anaoliveira@gmail.com',4),
+            (2,'(92)99212-4767', 4),
+            (1,'carlosrodrigues@gmail.com',5),
+            (2,'(71)99312-4767', 5),
+            (1,'julianacosta@gmail.com',6),
+            (2,'(68)99812-8888', 6),
+            (1,'lucasalmeida@gmail.com',7),
+            (2,'(82)99812-2425',7),
+            (1,'camilasantos@gmail.com',8),
+            (2,'(96)99813-4767', 8),
+            (1,'fernandolima@gmail.com',9),
+            (2,'(92)99502-4767', 9),
+            (1,'amandaferreira@gmail.com',10),
+            (2,'(71)99912-4767', 10),
+            (1,'rodrigosousa@gmail.com',11),
+            (2,'(68)99112-4767', 11),
+            (1,'isabelasilva@gmail.com',12),
+            (2,'(82)99812-4467', 12),
+            (1,'tiagocosta@gmail.com',13),
+            (2,'(96)99812-4755', 13),
+            (1,'leticiaoliveira@gmail.com',14),
+            (2,'(92)9950-4616', 14),
+            (1,'gustavorodrigues@gmail.com',15),
+            (2,'(71)99504-6166', 15),
+            (1,'patriciaalmeida@gmail.com',16),
+            (2,'(68)98181-5344', 16),
+            (1,'rafaelasantos@gmail.com',17),
+            (2,'(82)98157-4947', 17),
+            (1,'diegolima@gmail.com',18),
+            (2,'(96)99657-0589', 18),
+            (1,'renataferreira@gmail.com',19),
+            (2,'(92)98895-5725', 19),
+            (1,'luizsouza@gmail.com',20),
+            (2,'(71)99500-0028', 20),
+            (1,'marianasilva@gmail.com',21),
+            (2,'(68)99744-5347', 21),
+            (1,'marcelocosta@gmail.com',22),
+            (2,'(82)99662-3266', 22),
+            (1,'larissaoliveira@gmail.com',23),
+            (2,'(96)98838-8919', 23),
+            (1,'victorodrigues@gmail.com',24),
+            (2,'(92)99205-1225', 24),
+            (1,'carolinalmeida@gmail.com',25),
+            (2,'(71)99737-6136', 25),
+            (1,'pedroosantos@gmail.com',26),
+            (2,'(68)99895-0028',26),
+            (1,'marisouza@gmail.com',27),
+            (2,'(82)998867-2845', 27),
+            (1,'pedrinhosant@gmail.com',28),
+            (2,'(96)99981-7077', 28),
+            (1,'anaaoliv@gmail.com',29),
+            (2,'(92)99651-7829', 29),
+            (1,'carlinr@gmail.com',30),
+            (2,'(71)99867-7339', 30),
+            (1,'jucost@gmail.com',31),
+            (2,'(68)99291-0382',31),
+            (1,'lumeida@gmail.com',32),
+            (2,'(82)99527-3201', 32),
+            (1,'camsantos@gmail.com',33),
+            (2,'(96)99829-6191', 33),
+            (1,'felima@gmail.com',34),
+            (2,'(92)98142-5937', 34),
+            (1,'mandsferr@gmail.com',35),
+            (2,'(71)99610-7736', 35),
+            (1,'rosousa@gmail.com',36),
+            (2,'(68)99761-1853', 36),
+            (1,'isasilv@gmail.com',37),
+            (2,'(82)99752-5329', 37),
+            (1,'thicosta@gmail.com',38),
+            (2,'(96)98857-9546', 38),
+            (1,'letsoliva@gmail.com',39),
+            (2,'(92)998823-1756', 39),
+            (1,'gudrigues@gmail.com',40),
+            (2,'(71)99986-0303', 40),
+            (1,'patalmeida@gmail.com',41),
+            (2,'(68)98807-0615',41),
+            (1,'rafasant@gmail.com',42),
+            (2,'(82)99890-5887', 42),
+            (1,'didilima@gmail.com',43),
+            (2,'(96)99780-3226',43),
+            (1,'referr@gmail.com',44),
+            (2,'(92)99735-8233', 44),
+            (1,'lusonsa@gmail.com',45),
+            (2,'(71)99768-8723', 45),
+            (1,'masilva@gmail.com',46),
+            (2,'(68)99284-6124', 46),
+            (1,'tiocelin@gmail.com',47),
+            (2,'(82)98895-3905', 47),
+            (1,'lariiol@gmail.com',48),
+            (2,'(96)99291-1708', 48),
+            (1,'vitinro@gmail.com',49),
+            (2,'(92)99856-8854', 49),
+            (1,'carol.almeida@gmail.com',50),
+            (2,'(71)99265-9693', 50);
 
 b) e c) Novo banco de dados para testar a restauração (em caso de falha na restauração o grupo não pontuará neste quesito). <br>
     ![Backup do banco de dados](https://github.com/esthermoraes/Eventando/blob/main/Banco%20de%20dados/eventando.sql?raw=true "Backup do banco de dados")
