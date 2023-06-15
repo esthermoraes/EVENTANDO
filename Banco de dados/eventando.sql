@@ -1,5 +1,5 @@
 -- DELETANDO AS TABELAS
-– drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento
+– drop table USUARIO, EVENTO_PRESENCIAL, EVENTO_ONLINE, EVENTO, CONVITE, LISTA_CONVIDADOS, LOCALIZACAO, TIPO_LOGRADOURO, BAIRRO, CIDADE, ESTADO, TIPO_CONTATO, buffet, plataforma, Favorita, Possui_bairro_cidade, Possui_cidade_estado, Possui_tipo_contato_evento, Tem _tipo_contato_usuario
 
 -- CRIAÇÃO DAS TABELAS
 CREATE TABLE USUARIO (
@@ -78,8 +78,6 @@ CREATE TABLE ESTADO (
 CREATE TABLE TIPO_CONTATO (
     id_tipo_contato serial PRIMARY KEY,
     contato varchar(50),
-    descricao varchar(150),
-    FK_USUARIO_id_usuario int
 );
 
 CREATE TABLE buffet (
@@ -109,7 +107,14 @@ CREATE TABLE POSSUI_CIDADE_ESTADO (
 
 CREATE TABLE POSSUI_TIPO_CONTATO_EVENTO (
     fk_TIPO_CONTATO_id_tipo_contato int,
-    fk_EVENTO_id_evento int
+    fk_EVENTO_id_evento int,
+    descricao varchar(150)
+);
+
+CREATE TABLE Tem (
+    fk_USUARIO_id_usuario int,
+    fk_TIPO_CONTATO_id_tipo_contato int,
+    descricao varchar (150)
 );
 
 -- ALTERAÇÃO DAS TABELAS
@@ -211,6 +216,16 @@ ALTER TABLE Possui_tipo_contato_evento ADD CONSTRAINT FK_Possui_6
 ALTER TABLE Possui_tipo_contato_evento ADD CONSTRAINT FK_Possui_4
     FOREIGN KEY (fk_EVENTO_id_evento)
     REFERENCES EVENTO (id_evento)
+    ON DELETE SET NULL;
+ 
+ALTER TABLE Tem _tipo_contato_usuario CONSTRAINT FK_Tem_1
+    FOREIGN KEY (fk_USUARIO_id_usuario)
+    REFERENCES USUARIO (id_usuario)
+    ON DELETE RESTRICT;
+ 
+ALTER TABLE Tem _tipo_contato_usuario ADD CONSTRAINT FK_Tem_2
+    FOREIGN KEY (fk_TIPO_CONTATO_id_tipo_contato)
+    REFERENCES TIPO_CONTATO (id_tipo_contato)
     ON DELETE SET NULL;
 
 -- INSERÇÃO DOS DADOS NAS TABELAS
