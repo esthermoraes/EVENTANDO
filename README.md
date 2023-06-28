@@ -1466,7 +1466,7 @@ b) e c) Novo banco de dados para testar a restauração (em caso de falha na res
 * SLIDES: https://www.canva.com/design/DAFmdCF90bE/CgJyX0HK35jwzxr0NvuazQ/view?utm_content=DAFmdCF90bE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 #### 14.2. APRESENTAÇÃO EM VÍDEO
 * MINI PITCH: https://youtu.be/mhbzkoo9UVM
-* PITCH: https://youtu.be/EQPYfKt4eZg
+* PITCH: https://youtu.be/bGv8YS3MXHc
 * APRESENTAÇÃO DO SISTEMA: https://youtu.be/SsWORwzUMN4
   
 ># MARCO DA ENTREGA 03: DO ITEM 1 AO ITEM 14
